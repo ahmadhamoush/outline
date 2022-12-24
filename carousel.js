@@ -1,9 +1,9 @@
 $(".carousel").swipe({
 excludedElements: "input, select, textarea, .noSwipe",
-swipeLeft: function() {
+swipeUp: function() {
 $(this).carousel('next');
 },
-swipeRight: function() {
+swipeDown: function() {
 $(this).carousel('prev');
 },
 allowPageScroll: 'vertical'
