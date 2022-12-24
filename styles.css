@@ -74,6 +74,7 @@ height: 100%;
 .slide-desc h1{
   font-family: 'Gloria Hallelujah';
   font-size: 45px;
+  animation: 2s anim-lineUp ease-out;
 }
 .slide-desc h3{
   font-family: 'Montserrat' sans-serif;
@@ -175,4 +176,22 @@ animation-iteration-count: infinite;
  .vertical.carousel .carousel-inner > .active.left {
    top: -100%;
    left: 0;
+ }
+
+ @keyframes anim-lineUp {
+   0% {
+     opacity: 0;
+     transform: translateY(80%);
+   }
+   20% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+     transform: translateY(0%);
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0%);
+   }
  }
