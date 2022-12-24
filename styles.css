@@ -19,7 +19,7 @@ nav ul i{
 }
 
 .logo{
-  display: block;
+  display: none;
   z-index: 11;
   transition: all 250ms linear;
 width: 150px;
@@ -28,7 +28,6 @@ position: absolute;
 top:0;
 left:0;
 }
-
 
 .carousel .carousel-inner .item {
 height: 100vh;
@@ -54,6 +53,9 @@ height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bg.png');
   background-color: #ffeba7
 }
+.slide2 .slide-desc p{
+  font-size: 15px;
+}
 .slide-desc{
   display: flex;
   flex-direction: column;
@@ -63,26 +65,30 @@ width: 100%;
 height: 100%;
   color:white;
   margin: auto;
+    text-align: center;
+
 }
 .slide-desc > *{
   margin: 10px;
 }
 .slide-desc h1{
   font-family: 'Gloria Hallelujah';
-  font-size: 55px;
+  font-size: 45px;
 }
 .slide-desc h3{
   font-family: 'Montserrat' sans-serif;
   text-transform: uppercase;
   font-size: 25px;
   padding: 0 50px;
-  text-align: center;
+
 }
 .slide-desc p{
   font-family: 'Montserrat' sans-serif;
   font-weight: 200;
     font-size: 20px;
     padding: 50px;
+
+
 }
 .arrow{
   position: absolute;
