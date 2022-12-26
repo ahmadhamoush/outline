@@ -227,6 +227,8 @@ animation-iteration-count: infinite;
  transition:all 1s ease;
  background-position: left;
  display: flex;
+ animation: 2s splash ease-in-out forwards;
+ -webkit-animation:2s splash ease-in-out forwards;
   }
   .logo-mix{
     position: absolute;
