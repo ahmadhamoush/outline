@@ -119,6 +119,7 @@ animation-iteration-count: infinite;
 
 .carousel-control{
   height: 100%;
+  height: -webkit-fill-available;;
   width: 15%;
 font-size: 20px;
 color: #fff;
@@ -395,6 +396,7 @@ background-repeat: repeat-y;
   justify-content: center;
   align-items: center;
   margin: 10px;
+  background-color: white;
 }
 .options ul li{
   font-family: 'Gloria Hallelujah';
