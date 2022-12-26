@@ -216,7 +216,8 @@ opacity: .5;
    }
  }
 .container{
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y scroll;
   position: relative;
   margin: 0;
   padding: 0;
