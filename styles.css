@@ -239,11 +239,8 @@ animation-iteration-count: infinite;
     left:0;
     margin: auto;
   }
-  .logo-img{
 
-  }
   .toggle{
-    filter: invert(1);
     -webkit-filter: invert(1);
     -ms-filter: invert(1);
     -o-filter: invert(1);
