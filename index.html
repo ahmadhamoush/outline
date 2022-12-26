@@ -23,7 +23,7 @@
   <!-- Splash Screen -->
   <div class="splashScreen">
     <div class="logo-mix">
-      <img class="logo-img" src="black.png" alt="">
+      <img class="logo-img" src="./images/black.png" alt="">
     </div>
   </div>
 
@@ -32,7 +32,7 @@
     <div class="navContainer">
       <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
       <label for="menu-icon"></label>
-      <img class="logo" src="./white.png" alt="">
+      <img class="logo" src="./images/white.png" alt="">
       <nav class="nav">
         <ul class="pt-5">
           <li onclick="closeNav()"><a href="#">Home</a></li>
@@ -44,15 +44,16 @@
     </div>
 
     <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide vertical" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide vertical" data-interval ='false' data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <!-- Indicators -->
-        <!-- <ol class="carousel-indicators">
+        <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol> -->
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
 
         <div class="item slide1 active">
           <div class="slide-desc">
@@ -79,48 +80,51 @@
             <i class="fa-solid fa-angle-down arrow"></i>
           </div>
         </div>
+        <div class="item slide4">
+          <div class="menuContainer">
+            <div class="options">
+              <ul>
+                <li>Starters</li>
+                <li>Salads</li>
+                <li>Pasta</li>
+                <li>Main Courses</li>
+              </ul>
+            </div>
+            <div class="menu">
+              <div class="menu-left">
+                <h2>Cheese-tastic Delights</h2>
+                <p>A cheese tartelette dough is a savory pastry filled with creamy garlic and cheese. The buttery, flaky dough pairs well with the tangy cheese filling. Perfect for any occasion, this treat is a hit with cheese lovers.</p>
+              </div>
+
+
+              <div class="menu-right">
+                <div class="imgContainer">
+                  <i class="fa-solid fa-arrow-left leftArrow"></i>
+                  <img src="./images/item.png" alt="">
+                  <i class="fa-solid fa-arrow-right rightArrow"></i>
+                </div>
+              </div>
+            </div>
+            <img class="splash-img" src="./images/splash.png" alt="">
+          </div>
+          <!-- <div class="section2">
+            <h1>heellow</h1>
+            <h3>meow</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div> -->
+        </div>
       </div>
     </div>
     <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+  <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
   <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
   <span class="sr-only">Next</span>
-  </a>
-  <div class="menuContainer">
-    <div class="options">
-      <ul>
-        <li>Starters</li>
-        <li>Salads</li>
-        <li>Pasta</li>
-        <li>Main Courses</li>
-      </ul>
-    </div>
-    <div class="menu">
-      <div class="menu-left">
-        <h2>Cheese-tastic Delights</h2>
-        <p>A cheese tartelette dough is a savory pastry filled with creamy garlic and cheese. The buttery, flaky dough pairs well with the tangy cheese filling. Perfect for any occasion, this treat is a hit with cheese lovers.</p>
-      </div>
+  </a> -->
 
-
-      <div class="menu-right">
-        <div class="imgContainer">
-          <i class="fa-solid fa-arrow-left leftArrow"></i>
-          <img src="./item.png" alt="">
-          <i class="fa-solid fa-arrow-right rightArrow"></i>
-        </div>
-      </div>
-    </div>
-    <img class="splash-img" src="./splash.png" alt="">
-  </div>
-  <div class="section2">
-    <h1>heellow</h1>
-    <h3>meow</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
   </div>
 
 
@@ -139,7 +143,7 @@
     document.querySelector('.splashScreen').style.animation = '2s splash ease-in-out forwards'
     document.querySelector('.splashScreen').style.webkitAnimation = '2s splash ease-in-out forwards'
     setTimeout(() => {
-      document.querySelector('.logo-img').src = './logo-mix.png'
+      document.querySelector('.logo-img').src = './images/logo-mix.png'
       document.querySelector('.logo-img').classList.toggle('toggle')
       document.querySelector('.container').style.display = 'block'
     }, 1900)
@@ -159,11 +163,5 @@
 document.querySelector('.menu-icon').checked = false;
     // console.log(document.querySelector('.menu-icon').checked)
   }
-
-</script>
-<script type="text/javascript">
-document.addEventListener('scroll', function() {
-  console.log('scroll event fired!')
-});
-
+console.log(document.querySelector('.active'))
 </script>
