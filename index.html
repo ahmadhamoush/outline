@@ -98,8 +98,7 @@
       document.querySelector('.splashScreen').style.webkitAnimation = '2s splash ease-in-out forwards'
     setTimeout(()=>{
       document.querySelector('.logo-img').src = './logo-mix.png'
-            document.querySelector('.logo-img').style.filter='invert(0)'
-                  document.querySelector('.logo-img').style.webkitFilter='invert(0)'
+            document.querySelector('.logo-img').classList.toggle('toggle')
             document.querySelector('.container').style.display = 'block'
     },1900)
     setTimeout(()=>{
