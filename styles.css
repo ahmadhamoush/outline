@@ -279,18 +279,102 @@ background-position: center;
 }
 
 .menu{
+  background-image: url('./walls.png');
+  background-size: contain;
+  background-position: left;
+background-repeat: repeat-y;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .menu-left{
-  width: 100%;
-  height:100vh;
+    font-family: 'Gloria Hallelujah';
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  padding: 20px;
+
+  line-height: 2;
+}
+.menu-left h2{
+  margin: 0;
+  font-size: 40px;
+  color: #B0752E;
+  margin-bottom: 10px;
+}
+.menu-left p{
   background-color: white;
-  background-image: url('./walls.png');
+  width: 80%;
+  font-size: 18px;
+  font-weight: 200;
+}
+.menu-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    padding: 20px;
+}
+
+.imgContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url('./item.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px; */
+}
+.imgContainer img{
+  object-fit: contain;
+  width: 350px;
+  height: auto;
+}
+.imgContainer i{
+    color: #B0752E;
+   font-size: 50px;
+   cursor: pointer;
+}
+.imgContainer .leftArrow{
+
+}
+.imgContainer .rightArrow{
+
 }
 .splash-img{
   position: absolute;
   bottom: 0;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+
+}
+.logo-black{
+  position: absolute;
+  top:0;
+ width: 150px;
+ left:10px;
+}
+@media (max-width:961px){
+  .menu{
+    flex-direction: column;
+  }
+  .imgContainer img{
+    width: 250px;
+  }
+  .menu-left h2{
+    font-size: 30px;
+
+  }
+  .menu-left p{
+    font-size: 15px;
+    width: 100%
+  }
 }
