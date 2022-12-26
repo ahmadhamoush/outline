@@ -13,7 +13,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="splashScreen">
 
+  <div class="logo-mix">
+        <img class="logo-img" src="black.png" alt="">
+  </div>
+  </div>
+
+<div class="container">
   <!-- Navbar -->
   <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
   <label for="menu-icon"></label>
@@ -26,6 +33,8 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
+
+
 
   <!-- Carousel -->
   <div id="myCarousel" class="carousel slide vertical" data-ride="carousel">
@@ -73,6 +82,7 @@
   <span class="sr-only">Next</span>
   </a> -->
   </div>
+</div>
 
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
@@ -80,3 +90,25 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script><script src="./carousel.js"></script>
 </body>
 </html>
+
+<script type="text/javascript">
+  document.querySelector('.logo-img').classList.toggle('toggle')
+  setTimeout(()=>{
+    document.querySelector('.splashScreen').style.animation = '2s splash ease-in-out forwards'
+    setTimeout(()=>{
+      document.querySelector('.logo-img').src = './logo-mix.png'
+            document.querySelector('.logo-img').style.filter='invert(0)'
+              document.querySelector('.container').style.display = 'block'
+    },2000)
+    setTimeout(()=>{
+      document.querySelector('.splashScreen').style.transform = 'translateY(-100%)'
+    },2200)
+    setTimeout(()=>{
+      document.querySelector('.logo-img').classList.toggle('toggle')
+    },300)
+    setTimeout(()=>{
+      document.querySelector('.logo-img').classList.toggle('toggle')
+    },800)
+  },0)
+
+</script>
