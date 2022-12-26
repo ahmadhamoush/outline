@@ -244,6 +244,10 @@ animation-iteration-count: infinite;
   }
   .toggle{
     filter: invert(1);
+    -webkit-filter: invert(1);
+    -ms-filter: invert(1);
+    -o-filter: invert(1);
+    filter: invert(1);
   }
   /* .splashScreen:hover{
 
