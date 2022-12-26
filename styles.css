@@ -28,7 +28,7 @@ left:2%;
 }
 
 .carousel .carousel-inner .item {
-height: 80vh;
+height: 100vh;
 width: 100%;
 }
 /* .carousel .carousel-inner .item img {
@@ -116,7 +116,7 @@ animation-iteration-count: infinite;
 }
 
 .carousel-control{
-  height: 80%;
+  height: 100%;
   width: 15%;
 font-size: 20px;
 color: #fff;
@@ -216,8 +216,6 @@ opacity: .5;
    }
  }
 .container{
-  overflow-x: hidden;
-  overflow-y scroll;
   position: relative;
   margin: 0;
   padding: 0;
@@ -299,16 +297,18 @@ background-position: center;
 }
 
 .menu-left{
-    font-family: 'Gloria Hallelujah';
+
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-  padding: 20px;
-
+  padding: 0 20px;
+flex:1;
   line-height: 2;
+      width: 100%;
 }
 .menu-left h2{
+      font-family: 'Gloria Hallelujah';
   margin: 0;
   font-size: 40px;
   color: #B0752E;
@@ -316,16 +316,20 @@ align-items: center;
 }
 .menu-left p{
   background-color: white;
-  width: 80%;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
+  padding: 10px;
+      z-index: 1;
+      border-radius: 20px;
 }
 .menu-right{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    padding: 20px;
+    padding: 0 20px;
+    flex:1;
+    width: 100%;
 }
 
 .imgContainer{
@@ -357,7 +361,7 @@ align-items: center;
 
 }
 .menuContainer{
-
+  position: relative;
   background-image: url('./walls.png');
   background-size: contain;
   background-position: left;
@@ -368,14 +372,13 @@ background-repeat: repeat-y;
   justify-content: center;
   background-color: white;
   width: 100%;
-  height: 100%; height: -webkit-fill-available;;
+  height: 100%;
 }
 .splash-img{
-  /* position: absolute;
-  bottom: 0; */
+  position: absolute;
+   bottom:0;
   width: 100%;
   object-fit: contain;
-
 }
 .logo-black{
   position: absolute;
@@ -383,19 +386,26 @@ background-repeat: repeat-y;
  width: 150px;
  left:10px;
 }
-.options{
-  margin: 0 20px;
-}
+
 .options ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 .options ul li{
   font-family: 'Gloria Hallelujah';
   list-style: none;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0 20px;
+  cursor: pointer;
+}
+.section2{
+  background-color: black;
+  color:white;
+}
+.section2 >*{
+    margin: 0;
 }
 @media (max-width:800px){
   .menu{
@@ -410,13 +420,13 @@ background-repeat: repeat-y;
   }
   .menu-left p{
     font-size: 15px;
-    width: 100%
+    width: 100%;
+
   }
   .imgContainer i{
     font-size: 30px'
   }
   .options ul li{
     font-size: 18px;
-
   }
 }

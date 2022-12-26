@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
-body{
+/* body{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
@@ -14,7 +14,7 @@ body{
   background-size: 4%;
   height: 100vh;
   width: 100%;
-}
+} */
 .section-center{
   position: absolute;
   top: 50%;
@@ -354,9 +354,4 @@ h1{
 }
 .menu-icon:checked + .logo{
   display: none
-}
-
-.navContainer{
-	position: absolute;
-	top:0;
 }

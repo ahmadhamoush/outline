@@ -35,7 +35,7 @@
       <img class="logo" src="./white.png" alt="">
       <nav class="nav">
         <ul class="pt-5">
-          <li><a href="#">Home</a></li>
+          <li onclick="closeNav()"><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Menu</a></li>
           <li><a href="#">Contact</a></li>
@@ -44,7 +44,7 @@
     </div>
 
     <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide vertical" data-interval="false" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide vertical" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <!-- Indicators -->
@@ -116,6 +116,11 @@
     </div>
     <img class="splash-img" src="./splash.png" alt="">
   </div>
+  <div class="section2">
+    <h1>heellow</h1>
+    <h3>meow</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
   </div>
 
 
@@ -148,4 +153,17 @@
       document.querySelector('.logo-img').classList.toggle('toggle')
     }, 800)
   }, 0)
+
+  function closeNav(){
+
+document.querySelector('.menu-icon').checked = false;
+    // console.log(document.querySelector('.menu-icon').checked)
+  }
+
+</script>
+<script type="text/javascript">
+document.addEventListener('scroll', function() {
+  console.log('scroll event fired!')
+});
+
 </script>
