@@ -30,8 +30,9 @@ left:2%;
 }
 
 .carousel .carousel-inner .item {
-height: 100vh;
+height: 100%;
 width: 100%;
+height: -webkit-fill-available;
 }
 /* .carousel .carousel-inner .item img {
 width: 100%;
