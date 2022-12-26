@@ -49,8 +49,8 @@ h1{
 .menu-icon:checked + label,
 .menu-icon:not(:checked) + label{
   position: fixed;
-  top: 63px;
-  right: 75px;
+  top: 53px;
+  right: 65px;
   display: block;
   width: 30px;
   height: 30px;
@@ -122,14 +122,14 @@ h1{
   top: 33px;
   right: 50px;
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   padding: 0;
   margin: 0;
   z-index: 9;
   overflow: hidden;
   box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
-  background-color: #d1d1d1;
+  background-color: white;
   animation: border-transform 7s linear infinite;
 	-webkit-animation: border-transform 7s linear infinite;
 	-ms-animation:border-transform 7s linear infinite;
@@ -276,7 +276,7 @@ h1{
   width: 0;
   left: 0;
   /* background-color: #353746; */
-  background-color: #d1d1d1;
+  background-color: white;
   opacity: 0.8;
   transition: width 250ms linear;
 	-webkit-transtion:width 250ms linear;
@@ -335,7 +335,7 @@ h1{
 @media screen and (max-width: 991px) {
   .menu-icon:checked + label,
   .menu-icon:not(:checked) + label{
-    right: 55px;
+    right: 45px;
   }
   .nav{
     right: 30px;
@@ -354,4 +354,9 @@ h1{
 }
 .menu-icon:checked + .logo{
   display: none
+}
+
+.navContainer{
+	position: absolute;
+	top:0;
 }

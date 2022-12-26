@@ -19,14 +19,12 @@ nav ul i{
 }
 
 .logo{
-  display: none;
   z-index: 11;
   transition: all 250ms linear;
-width: 150px;
-height: 150px;
 position: absolute;
-top:0;
-left:0;
+width: 150px;
+top:2%;
+left:2%;
 }
 
 .carousel .carousel-inner .item {
