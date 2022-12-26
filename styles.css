@@ -28,7 +28,8 @@ left:2%;
 }
 
 .carousel .carousel-inner .item {
-height: 100vh;
+height: 100%;
+height: -webkit-fill-available;
 width: 100%;
 }
 /* .carousel .carousel-inner .item img {
@@ -60,6 +61,8 @@ justify-content: center;
   align-items: center;
 width: 100%;
 height: 100%;
+height: 100%;
+height: -webkit-fill-available;
   color:white;
   margin: auto;
     text-align: center;
@@ -210,13 +213,13 @@ animation-iteration-count: infinite;
   display: none;
   transition: all 1s ease-in-out;
   width: 100%;
-  height: 100vh;
+  height: 100%; height: -webkit-fill-available;;
 }
  .splashScreen{
    position: absolute;
    z-index: 100;
     width: 100%;
-    height: 100vh;
+    height: 100%; height: -webkit-fill-available;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,7 +234,7 @@ animation-iteration-count: infinite;
   .logo-mix{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%; height: -webkit-fill-available;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -353,7 +356,7 @@ background-repeat: repeat-y;
   justify-content: center;
   background-color: white;
   width: 100%;
-  height: 100vh;
+  height: 100%; height: -webkit-fill-available;;
 }
 .splash-img{
   position: absolute;
