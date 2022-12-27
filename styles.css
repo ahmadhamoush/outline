@@ -18,7 +18,7 @@ nav ul i{
   cursor: pointer;
 }
 body{
-
+overflow: hidden;
 }
 .logo{
   z-index: 11;
@@ -234,6 +234,36 @@ opacity: .5;
      -webkit-transform: translateY(0%);
    }
  }
+ @keyframes scale-anim {
+   0%{
+     transform: scale(0);
+   }
+   100%{
+     transform: scale(1);
+   }
+ }
+ @keyframes left-anim {
+   0%{
+     transform: translateX(-200%);
+   }
+   90%{
+    transform: translateX(50%);
+   }
+   100%{
+     transform: translateX(0);
+   }
+ }
+ @keyframes right-anim {
+   0%{
+     transform: translateX(200%);
+   }
+   90%{
+    transform: translateX(-50%);
+   }
+   100%{
+     transform: translateX(0);
+   }
+ }
 .container{
 
   position: relative;
@@ -372,17 +402,23 @@ flex:1;
   object-fit: contain;
   width: 350px;
   height: auto;
+  animation: 2s scale-anim ease-in-out forwards;
 }
 .imgContainer i{
+  transition: 250ms ease-in-out;
     color: #B0752E;
    font-size: 50px;
    cursor: pointer;
 }
+.imgContainer i:hover, .imgContainer i:active{
+  color:#ffeba7;
+     transform: translateX(10%);
+}
 .imgContainer .leftArrow{
-
+animation: 2s left-anim ease-in-out forwards;
 }
 .imgContainer .rightArrow{
-
+animation: 2s right-anim ease-in-out forwards;
 }
 .menuContainer{
   background-image: url('./images/walls.png');
@@ -424,6 +460,14 @@ background-repeat: repeat-y;
   font-size: 20px;
   margin: 0 20px;
   cursor: pointer;
+    -webkit-animation: 2s anim-lineUp ease-out;
+  transition: 250ms ease-in-out;
+}
+.options ul li:hover, .options ul li:active{
+  color:#ffeba7;
+  font-weight: bold;
+     transform: translateY(-10px);
+     text-decoration: underline;
 }
 .section2{
   background-color: black;
