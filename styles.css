@@ -299,7 +299,6 @@ opacity: .5;
     top:0;
     left:0;
     margin: auto;
-    filter: invert(1);
   }
 
   .toggle{

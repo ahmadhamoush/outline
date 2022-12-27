@@ -149,10 +149,10 @@ documentHeight()
 
   setTimeout(()=>{
   document.querySelector('.splashScreen').style.backgroundColor = 'white'
-  document.querySelector('.logo-mix').style.filter = 'invert(1)'
+ document.querySelector('.logo-img').classList.toggle('toggle')
   setTimeout(()=>{
   document.querySelector('.splashScreen').style.backgroundColor = 'black'
-  document.querySelector('.logo-mix').style.filter = 'invert(0)'
+ document.querySelector('.logo-img').classList.toggle('toggle')
 },500)
 
   setTimeout(()=>{
