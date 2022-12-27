@@ -23,7 +23,7 @@
   <!-- Splash Screen -->
   <div class="splashScreen">
     <div class="logo-mix">
-      <img class="logo-img" src="./images/black.png" alt="">
+      <img class="logo-img" src="./images/white.png" alt="">
     </div>
   </div>
 
@@ -138,25 +138,60 @@
 </html>
 
 <script type="text/javascript">
-  document.querySelector('.logo-img').classList.toggle('toggle')
-  setTimeout(() => {
-    document.querySelector('.splashScreen').style.animation = '2s splash ease-in-out forwards'
-    document.querySelector('.splashScreen').style.webkitAnimation = '2s splash ease-in-out forwards'
-    setTimeout(() => {
-      document.querySelector('.logo-img').src = './images/logo-mix.png'
-      document.querySelector('.logo-img').classList.toggle('toggle')
-      document.querySelector('.container').style.display = 'block'
-    }, 1900)
-    setTimeout(() => {
-      document.querySelector('.splashScreen').style.transform = 'translateY(-100%)'
-    }, 2200)
-    setTimeout(() => {
-      document.querySelector('.logo-img').classList.toggle('toggle')
-    }, 300)
-    setTimeout(() => {
-      document.querySelector('.logo-img').classList.toggle('toggle')
-    }, 800)
-  }, 0)
+const documentHeight = () => {
+ const doc = document.documentElement
+ doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+}
+window.addEventListener('resize', documentHeight)
+documentHeight()
+
+  // document.querySelector('.logo-img').classList.toggle('toggle')
+
+  setTimeout(()=>{
+  document.querySelector('.splashScreen').style.backgroundColor = 'white'
+  document.querySelector('.logo-mix').style.filter = 'invert(1)'
+  setTimeout(()=>{
+  document.querySelector('.splashScreen').style.backgroundColor = 'black'
+  document.querySelector('.logo-mix').style.filter = 'invert(0)'
+},800)
+
+  setTimeout(()=>{
+      document.querySelector('.splashScreen').style.background = 'linear-gradient(to left, white 50%, black 50%)';
+      document.querySelector('.splashScreen').style.backgroundSize = '200% 100%';
+    document.querySelector('.splashScreen').style.backgroundPosition = 'left';
+  },1200)
+  setTimeout(()=>{
+  document.querySelector('.splashScreen').style.backgroundPosition = 'center';
+},1700)
+setTimeout(()=>{
+
+document.querySelector('.logo-img').src = './images/logo-mix.png'
+},2000)
+setTimeout(()=>{
+document.querySelector('.splashScreen').style.transform = 'translateY(-100%)'
+document.querySelector('.container').style.display = 'block'
+// document.querySelector('.logo-img').src = './images/logo-mix.png'
+},2300)
+},500)
+
+  // setTimeout(() => {
+  //   document.querySelector('.splashScreen').style.animation = '2s splash ease-in-out forwards'
+  //   document.querySelector('.splashScreen').style.webkitAnimation = '2s splash ease-in-out forwards'
+  //   setTimeout(() => {
+  //     document.querySelector('.logo-img').src = './images/logo-mix.png'
+  //     document.querySelector('.logo-img').classList.toggle('toggle')
+  //     document.querySelector('.container').style.display = 'block'
+  //   }, 1900)
+  //   setTimeout(() => {
+  //     document.querySelector('.splashScreen').style.transform = 'translateY(-100%)'
+  //   }, 2200)
+  //   setTimeout(() => {
+  //     document.querySelector('.logo-img').classList.toggle('toggle')
+  //   }, 300)
+  //   setTimeout(() => {
+  //     document.querySelector('.logo-img').classList.toggle('toggle')
+  //   }, 800)
+  // }, 0)
 
   function closeNav(){
 
