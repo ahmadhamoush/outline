@@ -44,7 +44,7 @@
     </div>
 
     <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide vertical" data-interval ='false' data-ride="carousel">
+    <div id="myCarousel" class="carousel slide vertical" data-interval ='false'  >
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <!-- Indicators -->
@@ -53,6 +53,7 @@
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
 
         <div class="item slide1 active">
@@ -107,12 +108,12 @@
             </div>
             <img class="splash-img" src="./images/splash.png" alt="">
           </div>
-          <!-- <div class="section2">
-            <h1>heellow</h1>
-            <h3>meow</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div> -->
         </div>
+
+        <div class="item slide5">
+          <h3>The Traditional Way</h3>
+          <button type="button" name="button">View Menu</button>
+          </div>
       </div>
     </div>
     <!-- Left and right controls -->
@@ -172,24 +173,7 @@ document.querySelector('.container').style.display = 'block'
 },2300)
 })
 
-  // setTimeout(() => {
-  //   document.querySelector('.splashScreen').style.animation = '2s splash ease-in-out forwards'
-  //   document.querySelector('.splashScreen').style.webkitAnimation = '2s splash ease-in-out forwards'
-  //   setTimeout(() => {
-  //     document.querySelector('.logo-img').src = './images/logo-mix.png'
-  //     document.querySelector('.logo-img').classList.toggle('toggle')
-  //     document.querySelector('.container').style.display = 'block'
-  //   }, 1900)
-  //   setTimeout(() => {
-  //     document.querySelector('.splashScreen').style.transform = 'translateY(-100%)'
-  //   }, 2200)
-  //   setTimeout(() => {
-  //     document.querySelector('.logo-img').classList.toggle('toggle')
-  //   }, 300)
-  //   setTimeout(() => {
-  //     document.querySelector('.logo-img').classList.toggle('toggle')
-  //   }, 800)
-  // }, 0)
+
 
   function closeNav(){
 
