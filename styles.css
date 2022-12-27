@@ -405,10 +405,10 @@ background-repeat: repeat-y;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: white;
   width: 100%;
-  height: 100%;
+  height:100%;
   padding: 50px;
 }
 .splash-img{
@@ -435,7 +435,7 @@ background-repeat: repeat-y;
   font-family: 'Gloria Hallelujah';
   list-style: none;
   font-size: 20px;
-  margin: 0 20px;
+  margin: 0 10px;
   cursor: pointer;
     -webkit-animation: 2s anim-lineUp ease-out;
   transition: 250ms ease-in-out;
@@ -475,4 +475,33 @@ background-repeat: repeat-y;
   .options ul li{
     font-size: 18px;
   }
+  .menuContainer{
+    padding: 10px;
+    justify-content: flex-end;
+  }
+}
+@media (min-width:414px) {
+  .menuContainer{
+    justify-content: center;
+  }
+}
+@media (max-width:375px) {
+.imgContainer img{
+  width: 150px;
+}
+}
+@media (max-width:320px) {
+.imgContainer img{
+  width: 100px;
+}
+.menu-left h2{
+  font-size: 20px
+}
+.menu-left p{
+  font-size: 12px;
+}
+.options ul li{
+  font-size: 12px;
+}
+
 }
