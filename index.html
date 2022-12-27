@@ -153,26 +153,26 @@ documentHeight()
   setTimeout(()=>{
   document.querySelector('.splashScreen').style.backgroundColor = 'black'
   document.querySelector('.logo-mix').style.filter = 'invert(0)'
-},800)
+},500)
 
   setTimeout(()=>{
       document.querySelector('.splashScreen').style.background = 'linear-gradient(to left, white 50%, black 50%)';
       document.querySelector('.splashScreen').style.backgroundSize = '200% 100%';
     document.querySelector('.splashScreen').style.backgroundPosition = 'left';
-  },1200)
+  },1000)
   setTimeout(()=>{
   document.querySelector('.splashScreen').style.backgroundPosition = 'center';
-},1700)
+},1500)
 setTimeout(()=>{
 
 document.querySelector('.logo-img').src = './images/logo-mix.png'
-},2000)
+},1800)
 setTimeout(()=>{
 document.querySelector('.splashScreen').style.transform = 'translateY(-100%)'
 document.querySelector('.container').style.display = 'block'
 // document.querySelector('.logo-img').src = './images/logo-mix.png'
 },2300)
-},500)
+})
 
   // setTimeout(() => {
   //   document.querySelector('.splashScreen').style.animation = '2s splash ease-in-out forwards'
