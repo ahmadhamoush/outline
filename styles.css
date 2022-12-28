@@ -453,12 +453,21 @@ background-repeat: repeat-y;
 .slide5 >*{
     margin: 0;
 }
+.slide5-splash{
+  position: absolute;
+   top:0;
+  width: 100%;
+  object-fit: contain;
+  filter: invert(1);
+
+}
  .viewMenu{
    display: flex;
    flex-direction: column;
-   justify-content:center;
+   justify-content:flex-end;
    align-items: center;
    height: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5));
  }
  .viewMenu button{
    color:white;
@@ -476,39 +485,42 @@ background-repeat: repeat-y;
    color:black;
 
  }
- .slide5 img{
 
- }
  .slide5-bg{
 
-   height:500px;
-  width:500px;
-  bottom: -200px;
-   position: absolute;
-   right:0;
+position: absolute;
+right:0;
+bottom:0;
  }
  .slide5-bg img{
-   object-fit: cover;
  }
+.slide5{
+  /* height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
  .slide6{
       background-color: black;
+
  }
  .slide6 .burger{
-   height:500px;
-  width:500px;
-  top: -300px;
-   position: absolute;
-   right:0;
 
+position: absolute;
+right:0;
+top:0;
  }
- .slide6 img{
-   object-fit: cover;
- }
+
+
+@media (min-width:834px) {
+  .menuContainer{
+        justify-content: center;
+  }
+}
 
 @media (max-width:800px){
-   .slide6 .burger{
-     top:-45%;
-   }
+
   .menu{
     flex-direction: column;
   }
@@ -530,6 +542,10 @@ background-repeat: repeat-y;
   .options ul li{
     font-size: 18px;
   }
+  .menuContainer{
+    padding: 10px;
+    justify-content: center;
+  }
 }
 @media (max-width:390px) {
   .menuContainer{
@@ -547,6 +563,7 @@ background-repeat: repeat-y;
   .menuContainer{
     justify-content: flex-end;
   }
+
 }
 @media (max-width:375px) {
 .imgContainer img{
@@ -566,5 +583,14 @@ background-repeat: repeat-y;
 .options ul li{
   font-size: 12px;
 }
+
+}
+/* Set the size of the div element that contains the map */
+#map {
+  height: 300px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+  position: absolute;
+  bottom: 0;
+
 
 }

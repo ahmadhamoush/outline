@@ -112,20 +112,21 @@
         </div>
 
         <div class="item slide5">
+          <!-- <img class="slide5-splash" src="./images/splash2.png" alt=""> -->
           <div class="viewMenu">
             <h3>The Traditional Way</h3>
             <button type="button" name="button">View Menu</button>
 
           </div>
-
           <div class="slide5-bg">
-    <img src="./images/slide5.png" alt="">
+            <img src="./images/slide5.png" alt="">
           </div>
           </div>
           <div class="item slide6">
         <div class="burger">
-  <img src="./images/slide5.png" alt="">
+                      <img src="./images/slide6.png" alt="">
         </div>
+        <div id="map"></div>
           </div>
       </div>
     </div>
@@ -187,6 +188,28 @@ document.querySelector('.container').style.display = 'block'
 })
 
 
+// -- Google Maps --
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+
+  const uluru = { lat:33.89494103856613 ,lng: 35.5127938237086 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 19,
+    center: uluru,
+    backgroundColor:'black'
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+
 
   function closeNav(){
 
@@ -195,3 +218,5 @@ document.querySelector('.menu-icon').checked = false;
   }
 console.log(document.querySelector('.active'))
 </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
