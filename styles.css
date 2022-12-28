@@ -467,7 +467,6 @@ background-repeat: repeat-y;
    justify-content:flex-end;
    align-items: center;
    height: 50%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5));
  }
  .viewMenu button{
    color:white;
