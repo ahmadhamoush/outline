@@ -32,7 +32,9 @@
     <div class="navContainer">
       <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
       <label for="menu-icon"></label>
-      <img class="logo" src="./images/white.png" alt="">
+    <div class="logoContainer">
+        <img class="logo" src="./images/white.png" alt="">
+    </div>
       <nav class="nav">
         <ul class="pt-5">
           <li onclick="closeNav()"><a href="#">Home</a></li>
@@ -51,10 +53,10 @@
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+            <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
             <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
         </ol>
 
         <div class="item slide1 active">
@@ -74,14 +76,14 @@
             <i class="fa-solid fa-angle-down arrow"></i>
           </div>
         </div>
-        <div class="item slide3">
+        <!-- <div class="item slide3">
           <div class="slide-desc">
             <h2>DONT MISS OUT</h2>
             <h3>Make Your Reservation Now</h3>
             <p> <i class="fa-solid fa-phone phone"></i> +961 76 373 333</p>
             <i class="fa-solid fa-angle-down arrow"></i>
           </div>
-        </div>
+        </div> -->
         <div class="item slide4">
           <div class="menuContainer">
             <div class="options">
@@ -91,6 +93,7 @@
                 <li>Pasta</li>
                 <li>Main Courses</li>
               </ul>
+
             </div>
             <div class="menu">
               <div class="menu-left">
@@ -116,17 +119,24 @@
           <div class="viewMenu">
             <h3>The Traditional Way</h3>
             <button type="button" name="button">View Menu</button>
-
+            <p>Treat yourself to the ultimate burst of flavor with our flamethrower-heated burgers – a flame-grilled masterpiece that will set your taste buds ablaze!</p>
+            <video src="./videos/burger.mov" loop mute autoplay poster="./images/poster.jpg">
+            </video>
           </div>
           <div class="slide5-bg">
             <img src="./images/slide5.png" alt="">
           </div>
           </div>
           <div class="item slide6">
+      <div class="location">
+        <h2>Experience Our Restaurant in Person</h2>
+        <p>Come and experience the delicious flavors of our authentic 2d restaurant, expertly prepared by our skilled chefs using only the freshest ingredients. Plus, with our cozy atmosphere and friendly service, you'll feel right at home at our restaurant. Don't miss out – make your reservation today!</p>
         <div class="burger">
-                      <img src="./images/slide6.png" alt="">
+        <img src="./images/slide6.png" alt="">
         </div>
-        <div id="map"></div>
+              <img class="map" src="./images/map.png" alt="">
+      </div>
+        <div  id="map"></div>
           </div>
       </div>
     </div>

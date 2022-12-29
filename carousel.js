@@ -16,7 +16,7 @@ $(function(){
     interval: 2000
   }).on('slid.bs.carousel', function (event) {
     const index = carouselItems.siblings('.active').index();
-    if(index ==4){
+    if(index ==3){
       $('.logo').css('filter','invert(1)')
       $('.carousel-indicators').css('filter','invert(1)')
     }else{
