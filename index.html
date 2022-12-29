@@ -32,9 +32,6 @@
     <div class="navContainer">
       <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
       <label for="menu-icon"></label>
-    <div class="logoContainer">
-        <img class="logo" src="./images/white.png" alt="">
-    </div>
       <nav class="nav">
         <ul class="pt-5">
           <li onclick="closeNav()"><a href="#">Home</a></li>
@@ -60,6 +57,9 @@
         </ol>
 
         <div class="item slide1 active">
+          <div class="logoContainer">
+              <img class="logo" src="./images/white.png" alt="">
+          </div>
           <div class="slide-desc">
             <h2>OUTLINE</h2>
             <h3>Beirut</h3>
@@ -68,6 +68,9 @@
           </div>
         </div>
         <div class="item slide2">
+          <div class="logoContainer">
+              <img class="logo" src="./images/white.png" alt="">
+          </div>
           <div class="slide-desc">
             <h2>Exquisite</h2>
             <h3>Experience</h3>
@@ -85,9 +88,13 @@
           </div>
         </div> -->
         <div class="item slide4">
+          <div class="logoContainer">
+              <img class="logo" src="./images/white.png" alt="">
+          </div>
           <div class="menuContainer">
-            <div class="options">
-              <ul>
+            <h3 class="categories" onclick="showOptions()">Categories</h3>
+            <div class="optionsContainer">
+              <ul class="options">
                 <li>Starters</li>
                 <li>Salads</li>
                 <li>Pasta</li>
@@ -115,6 +122,9 @@
         </div>
 
         <div class="item slide5">
+          <div class="logoContainer">
+              <img class="logo" src="./images/white.png" alt="">
+          </div>
           <!-- <img class="slide5-splash" src="./images/splash2.png" alt=""> -->
           <div class="viewMenu">
             <h3>The Traditional Way</h3>
@@ -128,6 +138,9 @@
           </div>
           </div>
           <div class="item slide6">
+            <div class="logoContainer">
+                <img class="logo" src="./images/white.png" alt="">
+            </div>
       <div class="location">
         <h2>Experience Our Restaurant in Person</h2>
         <p>Come and experience the delicious flavors of our authentic 2d restaurant, expertly prepared by our skilled chefs using only the freshest ingredients. Plus, with our cozy atmosphere and friendly service, you'll feel right at home at our restaurant. Don't miss out – make your reservation today!</p>
@@ -227,6 +240,22 @@ document.querySelector('.menu-icon').checked = false;
     // console.log(document.querySelector('.menu-icon').checked)
   }
 console.log(document.querySelector('.active'))
+
+
+function showOptions(){
+  document.querySelector('.optionsContainer').classList.toggle('showOptions')
+}
+//
+// // Detect all clicks on the document
+// document.querySelector('.menuContainer').addEventListener("click", function(event) {
+// if(!event.target.classList.contains('options')){
+//   document.querySelector('.optionsContainer').classList.remove('showOptions')
+//
+// }else{
+//   console.log('meow')
+// }
+//
+// })
 </script>
 
 <script async

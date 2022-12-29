@@ -25,16 +25,18 @@ body{
 overflow: hidden;
 }
 .logo{
-  z-index: 11;
+z-index: 11;
 transition: all 250ms linear;
-position: fixed;
+width: 100px;
+/* position: fixed;
 width: 150px;
 top:2%;
-left:2%;
+left:2%; */
 }
 .logoContainer{
   position: relative;
   width: 100%;
+  padding: 20px;
 }
 /* .navContainer{
   position: relative;
@@ -411,11 +413,10 @@ background-repeat: repeat-y;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: white;
   width: 100%;
 height:100%;
-  padding: 50px;
 }
 .splash-img{
   position: absolute;
@@ -430,26 +431,50 @@ height:100%;
  left:10px;
 }
 
-.options ul{
+.optionsContainer{
+  position: absolute;
+  width: 100%;
+  bottom: -100%;
+    background-color: #d1d1d1;
+    border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+  z-index: 11;
+     transition: 0.5s ease-in-out;
+}
+.showOptions{
+  bottom: 0;
+}
+.optionsContainer ul{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  background-color: white;
+
+  margin: 0;
+
 }
-.options ul li{
+.optionsContainer ul li{
   font-family: 'Gloria Hallelujah';
   list-style: none;
   font-size: 20px;
-  margin: 0 15px;
+  margin: 25px 0 ;
   cursor: pointer;
+  color:white;
     -webkit-animation: 2s anim-lineUp ease-out;
   transition: 0.5s ease-in-out;
 }
-.options ul li:hover, .options ul li:active{
-  color:#ffeba7;
+.optionsContainer ul li:hover, .options ul li:active{
+  color:black;
   font-weight: bold;
      transform: translateY(-10px);
+}
+.categories{
+  font-family: 'Gloria Hallelujah';
+  font-size: 30px;
+  color:#B0752E;
+  cursor: pointer;
+  animation: 2s anim-lineUp ease-out;
+  -webkit-animation: 2s anim-lineUp ease-out;
 }
 .slide5{
   background-color: black;
@@ -469,7 +494,7 @@ height:100%;
  .viewMenu{
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    height: 100%;
  }
@@ -568,7 +593,7 @@ margin: 0;
   .imgContainer i{
     font-size: 30px'
   }
-  .options ul li{
+  .optionsContainer ul li{
     font-size: 18px;
   }
   /* .menuContainer{
@@ -591,11 +616,11 @@ margin: 0;
 
 
 } */
-@media (max-width:390px) {
+/* @media (max-width:390px) {
   .menuContainer{
     padding: 10px;
     justify-content: flex-end;
-  }
+  } */
 
 @media (max-width:375px) {
 .imgContainer img{
@@ -612,7 +637,7 @@ margin: 0;
 .menu-left p{
   font-size: 12px;
 }
-.options ul li{
+.optionsContainer ul li{
   font-size: 12px;
 }
 
