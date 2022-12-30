@@ -381,7 +381,7 @@ opacity: .5;
   position: relative;
   margin: 0;
   padding: 0;
-  display: none;
+  opacity:0;
   transition: all 1s ease-in-out;
   width: 100%;
  height: var(--doc-height);
