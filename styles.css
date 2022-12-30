@@ -36,7 +36,7 @@ left:2%; */
 .logoContainer{
   position: relative;
   width: 100%;
-  padding: 0 10px;
+  padding: 10px;
 }
 /* .navContainer{
   position: relative;
@@ -171,7 +171,6 @@ width: 100%;
   color:white;
   margin: auto;
     text-align: center;
-    height: 80%;
 
 }
 .slide-desc > *{
@@ -204,6 +203,23 @@ width: 100%;
     -webkit-animation: 2s anim-lineUp ease-out;
 
 
+}
+
+.phone{
+  position: absolute;
+  bottom:10px;
+  right:10px;
+  border-radius: 50%;
+  background-color: black;
+  font-size: 30px;
+  padding: 20px;
+  color:white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.phone:hover,.phone:active{
+  color:black;
+  background-color: white;
 }
 .arrow{
   position: absolute;
