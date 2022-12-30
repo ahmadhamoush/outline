@@ -19,6 +19,7 @@ $(function(){
     if(index ==3){
       $('.logo').css('filter','invert(1)')
       $('.carousel-indicators').css('filter','invert(1)')
+
     }else{
         $('.logo').css('filter','invert(0)')
             $('.carousel-indicators').css('filter','invert(0)')
