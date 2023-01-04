@@ -180,7 +180,8 @@
               <!-- <img class="map" src="./images/map.png" alt=""> -->
       </div>
 
-
+      <div id="map"></div>
+                  </div>
 
     </div>
       </div>
@@ -243,29 +244,29 @@ document.querySelector('.container').style.opacity = '1'
 })
 
 
-// // -- Google Maps --
-//
-// // Initialize and add the map
-// function initMap() {
-//   // The location of Uluru
-//
-//   const uluru = { lat:33.89494103856613 ,lng: 35.5127938237086 };
-//   // The map, centered at Uluru
-//   const map = new google.maps.Map(document.getElementById("map"), {
-//     zoom: 19,
-//     center: uluru,
-//     backgroundColor:'black'
-//   });
-//
-//
-//   // The marker, positioned at Uluru
-//   const marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map,
-//   });
-// }
-//
-// window.initMap = initMap;
+// -- Google Maps --
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+
+  const uluru = { lat:33.89494103856613 ,lng: 35.5127938237086 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 19,
+    center: uluru,
+    backgroundColor:'black'
+  });
+
+
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
 
 
   function closeNav(){
@@ -327,6 +328,6 @@ function hideCategories(){
 
 </script>
 
-<!-- <script async
+<script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdCJpL09Z-XFnHjggrTpgsVVPuB9MSkN0&callback=initMap">
-</script> -->
+</script>

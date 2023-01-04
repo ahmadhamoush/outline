@@ -28,6 +28,17 @@ $(function(){
         $('.logo').css('filter','invert(0)')
             $('.carousel-indicators').css('filter','invert(0)')
     }
+    if(index==4){
+          $('.phone').css('right','auto')
+      $('.phone').css('left','15px')
+          $('.phone').css('color','black')
+              $('.phone').css('backgroundColor','white')
+    }else{
+      $('.phone').css('right','15px')
+  $('.phone').css('left','auto')
+      $('.phone').css('color','white')
+          $('.phone').css('backgroundColor','black')
+    }
 
     console.log('Slide: ' + index)
   })
