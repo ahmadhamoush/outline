@@ -22,7 +22,7 @@ nav ul i{
   cursor: pointer;
 }
 body{
-overflow: hidden;
+
 }
 .logo{
 z-index: 11;
@@ -689,7 +689,7 @@ bottom:0;
 }
  .slide6{
 background-color: black;
-      /* background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0,0,0,0.9)),url('./images/img.jpg'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/mirror.png');
 
  }
  .slide6 .burger{
@@ -698,18 +698,33 @@ position: absolute;
 right:0;
 top:0;
 z-index: -1;
+border-radius: 20px;
+   box-shadow: 0px 0px 18px white;
+
+ }
+ .slide6 .burger img{
+   border-radius: 20px;
  }
 .location > *{
 margin: 0;
 }
 .location{
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color:white;
   padding: 80px;
+}
+.location p {
+  font-weight: 200;
+  margin: 10px 0;
+}
+.locationContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .map{
   width:500px !important;
@@ -785,14 +800,5 @@ video{
 .optionsContainer ul li{
   font-size: 12px;
 }
-
-}
-/* Set the size of the div element that contains the map */
-#map {
-  height: 300px; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
-  position: absolute;
-  bottom: 0;
-display: none;
 
 }
