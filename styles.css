@@ -441,6 +441,10 @@ flex:1;
   line-height: 2;
       width: 100%;
 }
+.menuItem{
+  background-color: white;
+  padding:10px;
+}
 .menu-left h2{
       font-family: 'Gloria Hallelujah';
   margin: 0;
@@ -451,10 +455,8 @@ flex:1;
   -webkit-animation: 2s anim-lineUp ease-out;
 }
 .menu-left p{
-  background-color: white;
   font-size: 18px;
   font-weight: 300;
-  padding: 10px;
       z-index: 1;
       border-radius: 20px;
       animation: 2s anim-lineUp ease-out;
@@ -505,17 +507,19 @@ animation: 2s left-anim ease-in-out forwards;
 .imgContainer .rightArrow{
 animation: 2s right-anim ease-in-out forwards;
 }
-.menuContainer{
+.slide4{
   background-image: url('./images/walls.png');
   background-size: contain;
-background-repeat: repeat-y;
+background-repeat: repeat;
+}
+.menuContainer{
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: white;
-  width: 100%;
-height:100%;
+
+
 }
 .splash-img{
   position: absolute;
@@ -567,7 +571,8 @@ height:100%;
   animation: 2s anim-lineUp ease-out;
 }
 .optionsContainer ul li:hover, .optionsContainer ul li:active{
-  color:#eee;
+  color:#d1d1d1;
+  font-weight: bold;
  letter-spacing: 1px;
 }
 .categoriesContainer{
@@ -620,6 +625,7 @@ height:100%;
 .slide5{
   background-color: black;
   color:white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/walls.png');
 }
 .slide5 >*{
     margin: 0;
@@ -639,21 +645,20 @@ height:100%;
    height: 100%;
  }
  .viewMenu p{
-   margin-top: 35px;
-   margin-bottom: 25px;
+  margin: 20px;
    font-family: 'Montserrat', sans-serif;
    line-height: 1.5;
+   font-weight: 200;
+
  }
+
  video{
    height:40vh;
    border-radius: 20px;
    box-shadow: 0px 0px 18px white;
    object-fit: cover;
  }
- .viewMenu p{
-   width: 80%;
 
- }
  .viewMenu button{
    color:white;
    background-color: black;
@@ -687,8 +692,9 @@ bottom:0;
   align-items: center; */
 }
  .slide6{
-background-color: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/mirror.png');
+background-position: center;
+background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/splash.jpg');
 
  }
  .slide6 .burger{
@@ -698,7 +704,7 @@ right:0;
 top:0;
 z-index: -1;
 border-radius: 20px;
-   box-shadow: 0px 0px 18px white;
+
 
  }
  .slide6 .burger img{
@@ -717,6 +723,7 @@ margin: 0;
 }
 .location p {
   font-weight: 200;
+  font-size: 20px;
   margin: 10px 0;
 }
 .locationContainer{
