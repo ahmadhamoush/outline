@@ -27,7 +27,7 @@ overflow: hidden;
 .logo{
 z-index: 11;
 transition: all 250ms linear;
-width: 120px;
+width: 150px;
 /* position: fixed;
 width: 150px;
 top:2%;
@@ -166,13 +166,14 @@ height: 80%;
 }
 .slide-desc > *{
   margin: 10px;
+  animation: 2s anim-lineUp ease-out;
+  -webkit-animation: 2s anim-lineUp ease-out;
 }
 .slide-desc h2{
   font-family: 'Gloria Hallelujah';
   font-size: 50px;
   color:white;;
-  animation: 2s anim-lineUp ease-out;
-  -webkit-animation: 2s anim-lineUp ease-out;
+
 
 }
 .slide-desc h3{
@@ -180,8 +181,7 @@ height: 80%;
   text-transform: uppercase;
   font-size: 25px;
   padding: 0 50px;
-  animation: 2s anim-lineUp ease-out;
-  -webkit-animation: 2s anim-lineUp ease-out;
+
 
 }
 .slide-desc p{
@@ -190,10 +190,6 @@ height: 80%;
     font-size: 20px;
     padding: 50px;
     color:white;
-    animation: 2s anim-lineUp ease-out;
-    -webkit-animation: 2s anim-lineUp ease-out;
-
-
 }
 
 .phone{
@@ -574,13 +570,52 @@ height:100%;
   color:#B0752E;
  letter-spacing: 1px;
 }
-.categories{
-  font-family: 'Gloria Hallelujah';
+.categoriesContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+      text-align: center;
+      border-radius: 20px;
+      cursor: pointer;
+      padding: 5px;
+
+}
+.categorienAnim{
+  animation: 2s categorienAnim ease-out;
+  -webkit-animation: 2s categorienAnim ease-out;
+  animation-iteration-count: infinite;
+}
+.left-arrow{
+  position: absolute;
+  left: 10px;
+  color:white;
   font-size: 30px;
-  color:#B0752E;
+  border-radius: 20px;
   cursor: pointer;
   animation: 2s anim-lineUp ease-out;
   -webkit-animation: 2s anim-lineUp ease-out;
+}
+.categories{
+  margin: 10px;
+  font-family: 'Gloria Hallelujah';
+  font-size: 20px;
+  color:#B0752E;
+}
+@keyframes categorienAnim {
+  0%{
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-80%);
+  }
+  100%{
+        transform: translateX(-100%);
+  }
 }
 .slide5{
   background-color: black;
@@ -610,7 +645,7 @@ height:100%;
    line-height: 1.5;
  }
  video{
-   width: 350px;
+   max-width: 300px;
        max-height: 100%;
    border-radius: 20px;
    box-shadow: 0px 0px 18px #ffeba7;

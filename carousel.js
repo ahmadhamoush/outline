@@ -16,14 +16,20 @@ $(function(){
     interval: 2000
   }).on('slid.bs.carousel', function (event) {
     const index = carouselItems.siblings('.active').index();
+    if(index ==1 || index == 2){
+      $('.slide-desc h2').toggleClass('animate')
+    }
     if(index ==3){
       $('.logo').css('filter','invert(1)')
       $('.carousel-indicators').css('filter','invert(1)')
+        $('.categoriesContainer').addClass('categorienAnim')
 
     }else{
         $('.logo').css('filter','invert(0)')
             $('.carousel-indicators').css('filter','invert(0)')
     }
+
+    console.log('Slide: ' + index)
   })
 })
 

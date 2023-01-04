@@ -115,20 +115,24 @@
               <img class="logo" src="./images/white.png" alt="">
           </div>
           <div class="menuContainer">
-            <h3 class="categories" onclick="showOptions()">Categories</h3>
-            <div class="optionsContainer">
-              <ul class="options">
-                <li>Starters</li>
-                <li>Salads</li>
-                <li>Pasta</li>
-                <li>Main Courses</li>
-              </ul>
-
-            </div>
             <div class="menu">
+              <div class="optionsContainer">
+                <ul class="options">
+                  <li>Starters</li>
+                  <li>Salads</li>
+                  <li>Pasta</li>
+                  <li>Main Courses</li>
+                </ul>
+              </div>
               <div class="menu-left">
+                      <div class="categoriesContainer" onclick="showOptions(event)">
+                        <i onclick="hideCategories()" class="fa-solid fa-angle-left left-arrow"></i>
+                <h3 class="categories" >Categories</h3>
+                      </div>
+              <div class="">
                 <h2>Cheese-tastic Delights</h2>
                 <p>A cheese tartelette dough is a savory pastry filled with creamy garlic and cheese. The buttery, flaky dough pairs well with the tangy cheese filling. Perfect for any occasion, this treat is a hit with cheese lovers.</p>
+              </div>
               </div>
 
 
@@ -154,7 +158,7 @@
             <h3>The Traditional Way</h3>
             <button type="button" name="button">View Menu</button>
             <p>Treat yourself to the ultimate burst of flavor with our flamethrower-heated burgers – a flame-grilled masterpiece that will set your taste buds ablaze!</p>
-            <video loop muted autobuffer preload="auto" poster="./images/poster.jpg">
+            <video loop muted autobuffer autoplay preload="auto">
         <source src="./videos/burger.mov">
     </video>
           </div>
@@ -266,22 +270,55 @@ document.querySelector('.menu-icon').checked = false;
   }
 console.log(document.querySelector('.active'))
 
+let counter = 0;
+function showOptions(e){
+    if(!e.target.classList.contains('left-arrow')){
+      if(counter == 0){
+          document.querySelector('.categoriesContainer').classList.remove('categorienAnim')
+          document.querySelector('.categoriesContainer').style.transform = 'translateX(0)'
+        console.log(  document.querySelector('.optionsContainer').classList.contains('showOptions'))
+      }else{
+        document.querySelector('.optionsContainer').classList.toggle('showOptions')
+        document.querySelectorAll('.optionsContainer ul li').forEach(item=>item.classList.add('animate'))
+      }
+    counter++;
+    console.log(counter)
+    }
 
-function showOptions(){
-  document.querySelector('.optionsContainer').classList.toggle('showOptions')
-  document.querySelectorAll('.optionsContainer ul li').forEach(item=>item.classList.add('animate'))
 }
-//
-// // Detect all clicks on the document
-// document.querySelector('.menuContainer').addEventListener("click", function(event) {
-// if(!event.target.classList.contains('options')){
-//   document.querySelector('.optionsContainer').classList.remove('showOptions')
-//
-// }else{
-//   console.log('meow')
-// }
-//
-// })
+
+var body = document.querySelector('.slide4');
+var except = document.querySelector('.optionsContainer');
+var except2 = document.querySelector('.categoriesContainer');
+
+
+body.addEventListener("click", function (ev) {
+
+    except.classList.remove('showOptions')
+  except2.style.transform = 'translateX(-100%)'
+  counter=0;
+
+}, false);
+except.addEventListener("click", function (ev) {
+
+    ev.stopPropagation(); //this is important! If removed, you'll get both alerts
+}, false);
+except2.addEventListener("click", function (ev) {
+
+    ev.stopPropagation(); //this is important! If removed, you'll get both alerts
+}, false);
+
+
+
+
+function hideCategories(){
+  counter=0;
+  document.querySelector('.categoriesContainer').style.transform = 'translateX(-100%)'
+  document.querySelector('.optionsContainer').classList.remove('showOptions')
+}
+
+
+
 
 </script>
 
