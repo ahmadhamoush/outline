@@ -672,13 +672,11 @@ height: 100%;
   border-radius: 20px;
   cursor: pointer;
   padding: 5px;
-}
-
-.categorienAnim {
   animation: 2s categorienAnim ease-out;
   -webkit-animation: 2s categorienAnim ease-out;
   animation-iteration-count: infinite;
 }
+
 
 .left-arrow {
   position: absolute;
@@ -845,6 +843,7 @@ video {
   margin: 50px;
   box-shadow: 0px 0px 18px white;
   flex: 1;
+    touch-action: pan-x;
 }
 
 /* @media (min-width:834px) {
@@ -862,6 +861,7 @@ video {
     flex:auto;
     width:90%;
     margin-bottom: 150px;
+
   }
 }
 
@@ -937,5 +937,42 @@ video {
 
     .optionsContainer ul li {
       font-size: 12px;
+    }
+    .slide-desc h2{
+      font-size: 20px;
+    }
+    .wrapper .icon{
+      height: 30px;
+      width: 30px;
+    }
+    .phone{
+      font-size: 20px;
+      padding: 15px;
+    }
+    .viewMenu h3{
+      font-size: 20px;
+    }
+    .viewMenu button{
+      font-size: 15px;
+      padding: 15px;
+    }
+    .viewMenu p{
+      margin: 10px;
+    }
+    video{
+      height:20vh;
+    }
+    .location h2{
+      font-size: 20px;
+    }
+    .location p{
+      font-size: 15px;
+    }
+    .location{
+      height:30vh;
+    }
+    #map{
+      margin: 0;
+      height:30vh;
     }
   }

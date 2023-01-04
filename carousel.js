@@ -22,7 +22,7 @@ $(function(){
     if(index ==3){
       $('.logo').css('filter','invert(1)')
       $('.carousel-indicators').css('filter','invert(1)')
-        $('.categoriesContainer').addClass('categorienAnim')
+        // $('.categoriesContainer').addClass('categorienAnim')
 
     }else{
         $('.logo').css('filter','invert(0)')

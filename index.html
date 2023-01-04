@@ -255,7 +255,13 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 19,
     center: uluru,
-    backgroundColor:'black'
+    backgroundColor:'black',
+     gestureHandling: 'greedy',
+     navigation: {
+     mouseWheelZoomEnabled: false,
+     browserTouchPanEnabled: false
+   },
+
   });
 
 
@@ -280,9 +286,10 @@ let counter = 0;
 function showOptions(e){
     if(!e.target.classList.contains('left-arrow')){
       if(counter == 0){
-          document.querySelector('.categoriesContainer').classList.remove('categorienAnim')
+                  document.querySelector('.categoriesContainer').style.animationIterationCount ='1'
+        setTimeout(()=>{
           document.querySelector('.categoriesContainer').style.transform = 'translateX(0)'
-        console.log(  document.querySelector('.optionsContainer').classList.contains('showOptions'))
+        },500)
       }else{
         document.querySelector('.optionsContainer').classList.toggle('showOptions')
         document.querySelectorAll('.optionsContainer ul li').forEach(item=>item.classList.add('animate'))
@@ -303,6 +310,9 @@ body.addEventListener("click", function (ev) {
     except.classList.remove('showOptions')
   except2.style.transform = 'translateX(-100%)'
   counter=0;
+  setTimeout(()=>{
+    document.querySelector('.categoriesContainer').style.animationIterationCount ='infinite'
+  },500)
 
 }, false);
 except.addEventListener("click", function (ev) {
@@ -321,6 +331,10 @@ function hideCategories(){
   counter=0;
   document.querySelector('.categoriesContainer').style.transform = 'translateX(-100%)'
   document.querySelector('.optionsContainer').classList.remove('showOptions')
+  setTimeout(()=>{
+    document.querySelector('.categoriesContainer').style.animationIterationCount ='infinite'
+  },500)
+
 }
 
 
