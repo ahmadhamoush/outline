@@ -25,7 +25,9 @@
     <div class="logo-mix">
       <img class="logo-img" src="./images/white.png" alt="">
     </div>
-            <div class="loader-1 center"><span></span></div>
+    <div class="progress">
+<div class="progress-value"></div>
+</div>
   </div>
 
   <div class="container">
@@ -342,11 +344,11 @@ function checkDirection() {
   if (touchendX > touchstartX) alert('swiped right!')
 }
 
-document.addEventListener('touchstart', e => {
+document.querySelector('.menu-right').addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenX
 })
 
-document.addEventListener('touchend', e => {
+document.querySelector('.menu-right').addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX
   checkDirection()
 })
