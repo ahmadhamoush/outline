@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Outline Beirut</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
 
@@ -201,161 +201,16 @@
   </div>
 
 
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
-  <script src="./carousel.js"></script>
+
 </body>
 
 </html>
-
-<script type="text/javascript">
-const documentHeight = () => {
- const doc = document.documentElement
- doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
-}
-window.addEventListener('resize', documentHeight)
-documentHeight()
-
-  setTimeout(()=>{
-  document.querySelector('.splashScreen').style.backgroundColor = 'white'
- document.querySelector('.logo-img').classList.toggle('toggle')
-  setTimeout(()=>{
-  document.querySelector('.splashScreen').style.backgroundColor = 'black'
- document.querySelector('.logo-img').classList.toggle('toggle')
-},500)
-
-  setTimeout(()=>{
-      document.querySelector('.splashScreen').style.background = 'linear-gradient(to left, white 50%, black 50%)';
-      document.querySelector('.splashScreen').style.backgroundSize = '200% 100%';
-    document.querySelector('.splashScreen').style.backgroundPosition = 'left';
-  },1000)
-  setTimeout(()=>{
-  document.querySelector('.splashScreen').style.backgroundPosition = 'center';
-},1500)
-setTimeout(()=>{
-
-document.querySelector('.logo-img').src = './images/logo-mix.png'
-},1800)
-})
-
-
-// -- Google Maps --
-
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-
-  const uluru = { lat:33.89494103856613 ,lng: 35.5127938237086 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 19,
-    center: uluru,
-    backgroundColor:'black',
-     gestureHandling: 'greedy',
-     navigation: {
-     mouseWheelZoomEnabled: false,
-     browserTouchPanEnabled: false
-   },
-
-  });
-
-
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
-
-window.initMap = initMap;
-
-
-  function closeNav(){
-
-document.querySelector('.menu-icon').checked = false;
-    // console.log(document.querySelector('.menu-icon').checked)
-  }
-console.log(document.querySelector('.active'))
-
-let counter = 0;
-function showOptions(e){
-    if(!e.target.classList.contains('left-arrow')){
-      if(counter == 0){
-                  document.querySelector('.categoriesContainer').style.animationIterationCount ='1'
-        setTimeout(()=>{
-          document.querySelector('.categoriesContainer').style.transform = 'translateX(0)'
-        },500)
-      }else{
-        document.querySelector('.optionsContainer').classList.toggle('showOptions')
-        document.querySelectorAll('.optionsContainer ul li').forEach(item=>item.classList.add('animate'))
-      }
-    counter++;
-    console.log(counter)
-    }
-
-}
-
-var body = document.querySelector('.slide4');
-var except = document.querySelector('.optionsContainer');
-var except2 = document.querySelector('.categoriesContainer');
-
-
-body.addEventListener("click", function (ev) {
-
-    except.classList.remove('showOptions')
-  except2.style.transform = 'translateX(-100%)'
-  counter=0;
-  setTimeout(()=>{
-    document.querySelector('.categoriesContainer').style.animationIterationCount ='infinite'
-  },500)
-
-}, false);
-except.addEventListener("click", function (ev) {
-
-    ev.stopPropagation(); //this is important! If removed, you'll get both alerts
-}, false);
-except2.addEventListener("click", function (ev) {
-
-    ev.stopPropagation(); //this is important! If removed, you'll get both alerts
-}, false);
-
-
-
-
-function hideCategories(){
-  counter=0;
-  document.querySelector('.categoriesContainer').style.transform = 'translateX(-100%)'
-  document.querySelector('.optionsContainer').classList.remove('showOptions')
-  setTimeout(()=>{
-    document.querySelector('.categoriesContainer').style.animationIterationCount ='infinite'
-  },500)
-
-}
-
-let touchstartX = 0
-let touchendX = 0
-
-function checkDirection() {
-  if (touchendX < touchstartX) alert('swiped left!')
-  if (touchendX > touchstartX) alert('swiped right!')
-}
-
-document.querySelector('.menu-right').addEventListener('touchstart', e => {
-  touchstartX = e.changedTouches[0].screenX
-})
-
-document.querySelector('.menu-right').addEventListener('touchend', e => {
-  touchendX = e.changedTouches[0].screenX
-  checkDirection()
-})
-
-
-
-
-</script>
-
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
+<script src="./carousel.js"></script>
+<script src="./index.js" charset="utf-8"></script>
 <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdCJpL09Z-XFnHjggrTpgsVVPuB9MSkN0&callback=initMap">
 </script>

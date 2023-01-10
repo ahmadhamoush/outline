@@ -149,79 +149,125 @@ height: 100%;
 /* Loader 1 */
 .loader-1 {
   position: absolute;
-  top:60%;
+  top: 60%;
   background-color: black;
   border-radius: 50%;
-	height: 32px;
-	width: 32px;
-	-webkit-animation: loader-1-1 4.8s linear infinite;
-	        animation: loader-1-1 4.8s linear infinite;
+  height: 32px;
+  width: 32px;
+  -webkit-animation: loader-1-1 4.8s linear infinite;
+  animation: loader-1-1 4.8s linear infinite;
 }
+
 @-webkit-keyframes loader-1-1 {
-	0%   { -webkit-transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
+
 @keyframes loader-1-1 {
-	0%   { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
 .loader-1 span {
-	display: block;
-	position: absolute;
-	top: 0; left: 0;
-	bottom: 0; right: 0;
-	margin: auto;
-	height: 32px;
-	width: 32px;
-	clip: rect(0, 32px, 32px, 16px);
-	-webkit-animation: loader-1-2 1.2s linear infinite;
-	        animation: loader-1-2 1.2s linear infinite;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 32px;
+  width: 32px;
+  clip: rect(0, 32px, 32px, 16px);
+  -webkit-animation: loader-1-2 1.2s linear infinite;
+  animation: loader-1-2 1.2s linear infinite;
 }
+
 @-webkit-keyframes loader-1-2 {
-	0%   { -webkit-transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(220deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(220deg);
+  }
 }
+
 @keyframes loader-1-2 {
-	0%   { transform: rotate(0deg); }
-	100% { transform: rotate(220deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(220deg);
+  }
 }
+
 .loader-1 span::after {
-	content: "";
-	position: absolute;
-	top: 0; left: 0;
-	bottom: 0; right: 0;
-	margin: auto;
-	height: 32px;
-	width: 32px;
-	clip: rect(0, 32px, 32px, 16px);
-	border: 3px solid #FFF;
-	border-radius: 50%;
-	-webkit-animation: loader-1-3 1.2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
-	        animation: loader-1-3 1.2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 32px;
+  width: 32px;
+  clip: rect(0, 32px, 32px, 16px);
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  -webkit-animation: loader-1-3 1.2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+  animation: loader-1-3 1.2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
 }
+
 @-webkit-keyframes loader-1-3 {
-	0%   { -webkit-transform: rotate(-140deg); }
-	50%  { -webkit-transform: rotate(-160deg); }
-	100% { -webkit-transform: rotate(140deg); }
+  0% {
+    -webkit-transform: rotate(-140deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-160deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(140deg);
+  }
 }
+
 @keyframes loader-1-3 {
-	0%   { transform: rotate(-140deg); }
-	50%  { transform: rotate(-160deg); }
-	100% { transform: rotate(140deg); }
+  0% {
+    transform: rotate(-140deg);
+  }
+
+  50% {
+    transform: rotate(-160deg);
+  }
+
+  100% {
+    transform: rotate(140deg);
+  }
 }
-
-
 
 .slide1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/landing.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/landing.jpg');
 }
 
 .slide2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/interior.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/interior.jpg');
 }
 
 .slide3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg.png');
   background-color: #ffeba7
 }
 
@@ -654,7 +700,7 @@ height: 100%;
 }
 
 .slide4 {
-  background-image: url('./images/walls.png');
+  background-image: url('../images/walls.png');
   background-size: contain;
   background-repeat: repeat;
 }
@@ -743,7 +789,6 @@ height: 100%;
   animation-iteration-count: infinite;
 }
 
-
 .left-arrow {
   position: absolute;
   left: 10px;
@@ -779,7 +824,7 @@ height: 100%;
 .slide5 {
   background-color: black;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/walls.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/walls.png');
 }
 
 .slide5>* {
@@ -851,7 +896,7 @@ video {
 .slide6 {
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/splash.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/splash.jpg');
 }
 
 .slide6 .burger {
@@ -909,7 +954,7 @@ video {
   margin: 50px;
   box-shadow: 0px 0px 18px white;
   flex: 1;
-    touch-action: pan-x;
+  touch-action: pan-x;
 }
 
 /* @media (min-width:834px) {
@@ -924,17 +969,13 @@ video {
   }
 
   #map {
-    flex:auto;
-    width:90%;
+    flex: auto;
+    width: 90%;
     margin-bottom: 150px;
-
   }
 }
 
 @media (max-width:800px) {
-  video {
-    width: 50%;
-  }
 
   .menu {
     flex-direction: column;
@@ -1002,41 +1043,52 @@ video {
     .optionsContainer ul li {
       font-size: 12px;
     }
-    .slide-desc h2{
+
+    .slide-desc h2 {
       font-size: 20px;
     }
-    .wrapper .icon{
+
+    .wrapper .icon {
       height: 30px;
       width: 30px;
     }
-    .phone{
+
+    .phone {
       font-size: 20px;
       padding: 15px;
     }
-    .viewMenu h3{
+
+    .viewMenu h3 {
       font-size: 20px;
     }
-    .viewMenu button{
+
+    .viewMenu button {
       font-size: 15px;
       padding: 15px;
     }
-    .viewMenu p{
+
+    .viewMenu p {
       margin: 10px;
     }
-    video{
-      height:20vh;
+
+    video {
+      height: 20vh;
     }
-    .location h2{
+
+    .location h2 {
       font-size: 20px;
     }
-    .location p{
+
+    .location p {
       font-size: 15px;
     }
-    .location{
-      height:30vh;
+
+    .location {
+      height: 30vh;
     }
-    #map{
+
+    #map {
       margin: 0;
-      height:30vh;
+      height: 30vh;
     }
   }
