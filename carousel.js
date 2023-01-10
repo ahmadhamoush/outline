@@ -1,3 +1,8 @@
+$(window).on('load',function(){
+  document.querySelector('.splashScreen').style.transform = 'translateY(-100%)'
+  document.querySelector('.container').style.opacity = '1'
+})
+
 $(".carousel").swipe({
 excludedElements: "input, select, textarea, .noSwipe",
 swipeUp: function() {

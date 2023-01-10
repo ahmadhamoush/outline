@@ -562,7 +562,7 @@ height: 100%;
 
 .imgContainer img {
   object-fit: contain;
-  width: 350px;
+  width: 300px;
   height: auto;
   animation: 2s scale-anim ease-in-out forwards;
 }

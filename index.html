@@ -137,7 +137,7 @@
 
 
               <div class="menu-right">
-                <div class="imgContainer">
+                <div onclick="checkDirection()" class="imgContainer">
                   <i class="fa-solid fa-arrow-left leftArrow"></i>
                   <img src="./images/item.png" alt="">
                   <i class="fa-solid fa-arrow-right rightArrow"></i>
@@ -166,7 +166,8 @@
             <img src="./images/slide5.png" alt="">
           </div>
           </div>
-          <div class="item slide6">
+    <div class="item slide6">
+                    <a href="tel:+96178871728"><i class="fa-solid fa-phone phone"></i></a>
             <div class="logoContainer">
                 <img class="logo" src="./images/white.png" alt="">
             </div>
@@ -236,11 +237,6 @@ setTimeout(()=>{
 
 document.querySelector('.logo-img').src = './images/logo-mix.png'
 },1800)
-setTimeout(()=>{
-document.querySelector('.splashScreen').style.transform = 'translateY(-100%)'
-document.querySelector('.container').style.opacity = '1'
-// document.querySelector('.logo-img').src = './images/logo-mix.png'
-},2300)
 })
 
 
@@ -336,6 +332,23 @@ function hideCategories(){
   },500)
 
 }
+
+let touchstartX = 0
+let touchendX = 0
+
+function checkDirection() {
+  if (touchendX < touchstartX) alert('swiped left!')
+  if (touchendX > touchstartX) alert('swiped right!')
+}
+
+document.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+})
+
+document.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+})
 
 
 
