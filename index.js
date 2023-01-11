@@ -61,7 +61,7 @@ except2.addEventListener("click", function(ev) {
 
 
 
-let index = 0;
+let index = 1;
 document.querySelector('.name').innerText = salads[index].name
 document.querySelector('.desc').innerText = salads[index].desc
     document.querySelector('.price').innerText = salads[index].price +',000L.L'

@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -295,21 +296,18 @@ height: 100%;
 }
 
 .slide-desc h2 {
-  font-family: 'Gloria Hallelujah';
   font-size: 50px;
   color: white;
   ;
 }
 
 .slide-desc h3 {
-  font-family: 'Montserrat'sans-serif;
   text-transform: uppercase;
   font-size: 25px;
   padding: 0 50px;
 }
 
 .slide-desc p {
-  font-family: 'Montserrat'sans-serif;
   font-weight: 200;
   font-size: 20px;
   padding: 50px;
@@ -630,7 +628,6 @@ height: 100%;
 }
 
 .menu-left h2 {
-  font-family: 'Gloria Hallelujah';
   margin: 0;
   font-size: 40px;
   color: black;
@@ -708,6 +705,7 @@ height: 100%;
 .slide4 {
   background-image: url('../images/walls.png');
   background-repeat:no-repeat;
+  background-color: #eee
 }
 
 .menuContainer {
@@ -746,6 +744,7 @@ height: 100%;
   border-top-right-radius: 20px;
   z-index: 11;
   transition: 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
 }
 
 .showOptions {
@@ -761,7 +760,6 @@ height: 100%;
 }
 
 .optionsContainer ul li {
-  font-family: 'Gloria Hallelujah';
   list-style: none;
   font-size: 20px;
   margin: 25px 0;
@@ -800,7 +798,6 @@ height: 100%;
 
 .categories {
   margin: 10px;
-  font-family: 'Gloria Hallelujah';
   font-size: 20px;
   color: white;
 }
@@ -832,7 +829,6 @@ height: 100%;
 
 .viewMenu p {
   margin: 20px;
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   font-weight: 200;
 }
@@ -880,7 +876,7 @@ video {
 .slide6 {
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/splash.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/dots.png');
 }
 
 .slide6 .burger {
