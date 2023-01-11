@@ -34,23 +34,10 @@ function closeNav() {
 }
 
 
-let counter = 0;
-
 //show options container on click
 function showOptions(e) {
-  if (!e.target.classList.contains('left-arrow')) {
-    if (counter == 0) {
-      document.querySelector('.categoriesContainer').style.animationIterationCount = '1'
-      setTimeout(() => {
-        document.querySelector('.categoriesContainer').style.transform = 'translateX(0)'
-      }, 500)
-    } else {
       document.querySelector('.optionsContainer').classList.toggle('showOptions')
       document.querySelectorAll('.optionsContainer ul li').forEach(item => item.classList.add('animate'))
-    }
-    counter++;
-    console.log(counter)
-  }
 
 }
 
@@ -61,11 +48,6 @@ var except2 = document.querySelector('.categoriesContainer');
 //hiding options
 body.addEventListener("click", function(ev) {
   except.classList.remove('showOptions')
-  except2.style.transform = 'translateX(-100%)'
-  counter = 0;
-  setTimeout(() => {
-    document.querySelector('.categoriesContainer').style.animationIterationCount = 'infinite'
-  }, 500)
 
 }, false);
 except.addEventListener("click", function(ev) {
@@ -78,17 +60,6 @@ except2.addEventListener("click", function(ev) {
 }, false);
 
 
-
-//hide Categories function
-function hideCategories() {
-  counter = 0;
-  document.querySelector('.categoriesContainer').style.transform = 'translateX(-100%)'
-  document.querySelector('.optionsContainer').classList.remove('showOptions')
-  setTimeout(() => {
-    document.querySelector('.categoriesContainer').style.animationIterationCount = 'infinite'
-  }, 500)
-
-}
 
 let index = 0;
 document.querySelector('.name').innerText = salads[index].name
