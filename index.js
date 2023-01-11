@@ -90,14 +90,37 @@ function hideCategories() {
 
 }
 
+let index = 0;
+document.querySelector('.name').innerText = salads[index].name
+document.querySelector('.desc').innerText = salads[index].desc
+document.querySelector('.img').src = salads[index].img
 
 //Detect swipe on menu container
 let touchstartX = 0
 let touchendX = 0
 
 function checkDirection() {
-  if (touchendX < touchstartX) alert('swiped left!')
-  if (touchendX > touchstartX) alert('swiped right!')
+  if (touchendX < touchstartX){
+    // alert('swiped left!')
+    index++;
+    document.querySelector('.name').innerText = salads[index].name
+    document.querySelector('.desc').innerText = salads[index].desc
+    document.querySelector('.img').src = salads[index].img
+    if(index==2){
+      index =0
+    }
+  }
+  if (touchendX > touchstartX){
+    // alert('swiped right!')
+      index--;
+      document.querySelector('.name').innerText = salads[index].name
+      document.querySelector('.desc').innerText = salads[index].desc
+      document.querySelector('.img').src = salads[index].img
+      if(index==0){
+        index =2
+      }
+  }
+  console.log(index)
 }
 
 document.querySelector('.menu-right').addEventListener('touchstart', e => {

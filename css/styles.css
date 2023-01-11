@@ -626,7 +626,6 @@ height: 100%;
 }
 
 .menuItem {
-  background-color: white;
   padding: 10px;
 }
 
@@ -660,6 +659,7 @@ height: 100%;
 }
 
 .imgContainer {
+
   position: relative;
   display: flex;
   align-items: center;
@@ -677,6 +677,7 @@ height: 100%;
   width: 300px;
   height: auto;
   animation: 2s scale-anim ease-in-out forwards;
+  margin: 10px;
 }
 
 .imgContainer i {
@@ -701,8 +702,7 @@ height: 100%;
 
 .slide4 {
   background-image: url('../images/walls.png');
-  background-size: contain;
-  background-repeat: repeat;
+  background-repeat:no-repeat;
 }
 
 .menuContainer {
@@ -710,6 +710,12 @@ height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  background-color: white;
+  padding:10px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+     box-shadow:         3px 3px 5px 6px #ccc;
+    border-radius: 20px;
 }
 
 .splash-img {
@@ -982,12 +988,12 @@ video {
   }
 
   .imgContainer img {
-    width: 200px;
+    width: 250px;
   }
 
-  .menu-left h2 {
+  /* .menu-left h2 {
     font-size: 30px;
-  }
+  } */
 
   .menu-left p {
     font-size: 15px;
@@ -1029,12 +1035,12 @@ video {
 
   @media (max-width:320px) {
     .imgContainer img {
-      width: 100px;
+      width: 150px;
     }
 
-    .menu-left h2 {
+    /* .menu-left h2 {
       font-size: 20px
-    }
+    } */
 
     .menu-left p {
       font-size: 12px;
