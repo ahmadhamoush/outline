@@ -83,6 +83,11 @@ function checkDirection() {
     document.querySelector('.img').src = salads[index].img
   index++;
 
+
+  document.querySelector('video').style.transform ='translateX(-150px) rotate(-10deg)'
+
+
+
   }
   if (touchendX > touchstartX){
     console.log('swiped right!')
@@ -94,6 +99,10 @@ function checkDirection() {
           document.querySelector('.price').innerText = salads[index].price+',000L.L'
       document.querySelector('.img').src = salads[index].img
     index--;
+
+      document.querySelector('video').style.transform ='translateX(0) rotate(0)'
+
+
   }
   console.log(index)
 }
@@ -106,6 +115,19 @@ document.querySelector('.menu-right').addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX
   checkDirection()
 })
+
+
+
+document.querySelector('video').addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+})
+
+document.querySelector('video').addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+})
+
+
 
 // -- Google Maps --
 

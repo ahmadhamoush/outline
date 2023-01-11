@@ -705,6 +705,7 @@ height: 100%;
 .slide4 {
   background-image: url('../images/walls.png');
   background-repeat:no-repeat;
+
 }
 
 .menuContainer {
@@ -832,11 +833,47 @@ height: 100%;
   font-weight: 200;
 }
 
+.videContainer{
+  position: relative;
+}
+.more{
+  position: absolute;
+  top:0;
+  margin-left: auto;
+margin-right: auto;
+left: 75px;
+right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+.more p{
+  font-size: 15px;
+  text-align: center;
+  font-weight: 200;
+}
+.videContainer .swipe-left{
+  position: absolute;
+  margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+bottom: 5px;
+text-align: center;
+  font-weight: 200;
+  font-size:12px;
+  z-index: 1;
+}
 video {
   height: 40vh;
   border-radius: 20px;
   box-shadow: 0px 0px 18px white;
   object-fit: cover;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  z-index:1;
 }
 
 .viewMenu button {
@@ -860,6 +897,7 @@ video {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 
 .slide5-bg img {}
