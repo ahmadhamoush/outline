@@ -93,6 +93,7 @@ function hideCategories() {
 let index = 0;
 document.querySelector('.name').innerText = salads[index].name
 document.querySelector('.desc').innerText = salads[index].desc
+    document.querySelector('.price').innerText = salads[index].price +',000L.L'
 document.querySelector('.img').src = salads[index].img
 
 //Detect swipe on menu container
@@ -101,24 +102,27 @@ let touchendX = 0
 
 function checkDirection() {
   if (touchendX < touchstartX){
-    // alert('swiped left!')
-    index++;
-    document.querySelector('.name').innerText = salads[index].name
-    document.querySelector('.desc').innerText = salads[index].desc
-    document.querySelector('.img').src = salads[index].img
+    console.log('swiped left!')
     if(index==2){
       index =0
     }
+    document.querySelector('.name').innerText = salads[index].name
+    document.querySelector('.desc').innerText = salads[index].desc
+    document.querySelector('.price').innerText = salads[index].price+',000L.L'
+    document.querySelector('.img').src = salads[index].img
+  index++;
+
   }
   if (touchendX > touchstartX){
-    // alert('swiped right!')
-      index--;
-      document.querySelector('.name').innerText = salads[index].name
-      document.querySelector('.desc').innerText = salads[index].desc
-      document.querySelector('.img').src = salads[index].img
+    console.log('swiped right!')
       if(index==0){
         index =2
       }
+      document.querySelector('.name').innerText = salads[index].name
+      document.querySelector('.desc').innerText = salads[index].desc
+          document.querySelector('.price').innerText = salads[index].price+',000L.L'
+      document.querySelector('.img').src = salads[index].img
+    index--;
   }
   console.log(index)
 }

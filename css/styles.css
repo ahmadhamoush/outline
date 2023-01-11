@@ -657,6 +657,11 @@ height: 100%;
   flex: 1;
   width: 100%;
 }
+.price{
+  animation: 2s anim-lineUp ease-out;
+  -webkit-animation: 2s anim-lineUp ease-out;
+  font-weight: 500
+}
 
 .imgContainer {
 
@@ -991,9 +996,9 @@ video {
     width: 250px;
   }
 
-  /* .menu-left h2 {
+  .menu-left h2 {
     font-size: 30px;
-  } */
+  }
 
   .menu-left p {
     font-size: 15px;
@@ -1038,9 +1043,9 @@ video {
       width: 150px;
     }
 
-    /* .menu-left h2 {
+    .menu-left h2 {
       font-size: 20px
-    } */
+    }
 
     .menu-left p {
       font-size: 12px;
