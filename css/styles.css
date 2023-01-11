@@ -824,7 +824,6 @@ height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
 }
 
 .viewMenu p {
@@ -833,7 +832,7 @@ height: 100%;
   font-weight: 200;
 }
 
-.videContainer{
+.videoContainer{
   position: relative;
 }
 .more{
@@ -854,7 +853,7 @@ right: 0;
   text-align: center;
   font-weight: 200;
 }
-.videContainer .swipe-left{
+.videoContainer .swipe-left{
   position: absolute;
   margin-left: auto;
 margin-right: auto;
@@ -938,10 +937,10 @@ video {
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 30px;
+
   margin: 10px;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.5;
   flex: 1;
 }
 
