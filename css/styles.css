@@ -986,8 +986,18 @@ video {
   }
 } */
 @media (max-width:650px) {
+  .menu-left h2{
+    margin: 0
+  }
+  .menu-left p{
+    margin: 0
+  }
+  .categoriesContainer{
+    margin: 0;
+  }
   .slide4{
     background-size: cover;
+      background-image: url('../images/walls-flipped.png');
   }
   .locationContainer {
     flex-direction: column;
@@ -1017,7 +1027,7 @@ video {
     padding-top:15px;
   }
   .imgContainer img {
-    width: 230px;
+    width: 200px;
     margin: 0 20px;
   }
 
