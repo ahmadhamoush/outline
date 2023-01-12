@@ -714,11 +714,11 @@ height: 100%;
 }
 
 .slide4 {
-  background-image: url('../images/walls.png');
+  background-image: url('../images/bg7.png');
   background-repeat:no-repeat;
-  background-position: center;
-  background-size: contain;
   background-position: left;
+  background-size: cover;
+
 
 }
 
@@ -1005,10 +1005,6 @@ video {
   }
   .categoriesContainer{
     margin: 0;
-  }
-  .slide4{
-    background-size: cover;
-      background-image: url('../images/walls-flipped.png');
   }
   .locationContainer {
     flex-direction: column;
