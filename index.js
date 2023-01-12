@@ -65,7 +65,7 @@ let index = 1;
 document.querySelector('.name').innerText = salads[index].name
 document.querySelector('.desc').innerText = salads[index].desc
     document.querySelector('.price').innerText = salads[index].price +',000L.L'
-document.querySelector('.img').src = salads[index].img
+document.querySelector('.menuImg').src = salads[index].img
 
 //Detect swipe on menu container
 let touchstartX = 0
@@ -80,7 +80,7 @@ function checkDirection() {
     document.querySelector('.name').innerText = salads[index].name
     document.querySelector('.desc').innerText = salads[index].desc
     document.querySelector('.price').innerText = salads[index].price+',000L.L'
-    document.querySelector('.img').src = salads[index].img
+    document.querySelector('.menuImg').src = salads[index].img
   index++;
 
 
@@ -97,7 +97,7 @@ function checkDirection() {
       document.querySelector('.name').innerText = salads[index].name
       document.querySelector('.desc').innerText = salads[index].desc
           document.querySelector('.price').innerText = salads[index].price+',000L.L'
-      document.querySelector('.img').src = salads[index].img
+      document.querySelector('.menuImg').src = salads[index].img
     index--;
 
       document.querySelector('video').style.transform ='translateX(0) rotate(0)'
