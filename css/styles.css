@@ -680,6 +680,10 @@ height: 100%;
   height: auto;
   animation: 2s scale-anim ease-in-out forwards;
   margin: 10px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+   box-shadow:         3px 3px 5px 6px #ccc;
+   border-radius: 50%;
 }
 
 .imgContainer i {
@@ -1017,11 +1021,10 @@ video {
   }
 
   .menuContainer{
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 20px;
     padding: 0;
     height: 80%;
-        justify-content: flex-start;
+    justify-content: flex-start;
   }
   .menuItem{
     padding:0;
