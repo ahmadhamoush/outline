@@ -912,7 +912,7 @@ video {
 .slide6 {
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/dots.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pattern.jpeg');
 }
 
 .slide6 .burger {
@@ -983,7 +983,6 @@ video {
     flex-direction: column;
     height: 100%;
   }
-
   #map {
     flex: auto;
     width: 90%;
