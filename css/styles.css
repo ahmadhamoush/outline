@@ -617,7 +617,7 @@ height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 10px 40px;
   flex: 1;
   line-height: 2;
   width: 100%;
@@ -703,7 +703,7 @@ height: 100%;
 }
 
 .slide4 {
-  background-image: url('../images/walls.png');
+  background-image: url('../images/wallsplash.png');
   background-repeat:no-repeat;
 
 }
@@ -715,6 +715,7 @@ height: 100%;
   justify-content: flex-start;
   background-color: white;
   padding:10px;
+margin:30px;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
      -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
      box-shadow:         3px 3px 5px 6px #ccc;
@@ -725,7 +726,7 @@ height: 100%;
   position: absolute;
   bottom: 0;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .logo-black {
@@ -997,12 +998,23 @@ video {
     flex-direction: column;
   }
 
+  .menuContainer{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height: 80%
+  }
+  .menuItem{
+    padding:0;
+    padding-top:15px;
+  }
   .imgContainer img {
-    width: 250px;
+    width: 200px;
+    margin: 0 20px;
   }
 
   .menu-left h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .menu-left p {
@@ -1011,7 +1023,7 @@ video {
   }
 
   .imgContainer i {
-    font-size: 30px'
+    font-size: 30px;
 
   }
 
