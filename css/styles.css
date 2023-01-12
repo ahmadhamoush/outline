@@ -995,9 +995,6 @@ video {
   .categoriesContainer{
     margin: 0;
   }
-  .menuContainer{
-    justify-content: flex-start;
-  }
   .slide4{
     background-size: cover;
       background-image: url('../images/walls-flipped.png');
@@ -1024,6 +1021,7 @@ video {
     margin-bottom: 0;
     padding: 0;
     height: 80%;
+        justify-content: flex-start;
   }
   .menuItem{
     padding:0;
