@@ -354,7 +354,7 @@ height: 100%;
 
 .arrow {
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   font-size: 60px;
   animation: arrowFade 2s ease-in-out;
   animation-iteration-count: infinite;
@@ -875,7 +875,7 @@ video {
   z-index:1;
 }
 
-.viewMenu button {
+.viewMenu .menu {
   color: white;
   background-color: black;
   border: 1px solid white;
@@ -884,10 +884,11 @@ video {
   margin: 20px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  text-decoration: none;
   z-index: 11;
 }
 
-.viewMenu button:hover, .viewMenu button:active {
+.viewMenu .menu:hover, .viewMenu .menu:active {
   background-color: white;
   color: black;
 }
