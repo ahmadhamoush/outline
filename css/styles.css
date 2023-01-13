@@ -675,8 +675,8 @@ height: 100%;
 }
 
 .imgContainer .menuImg {
-  object-fit: contain;
-  width: 300px;
+  object-fit: cover;
+  width: 100%;
   height: auto;
   animation: 2s scale-anim ease-in-out forwards;
   margin: 10px;
@@ -732,7 +732,7 @@ margin:30px;
      -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
      box-shadow:         3px 3px 5px 6px #ccc;
     border-radius: 20px;
-    width:350px;
+    max-width:100%;
     height: auto;
 }
 
@@ -888,7 +888,8 @@ text-align: center;
   z-index: 1;
 }
 video {
-  height: 35vh;
+  max-width: 45vw;
+  max-height: 50vh;
   border-radius: 20px;
   box-shadow: 0px 0px 18px white;
   object-fit: cover;
@@ -935,7 +936,7 @@ video {
 .slide6 {
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pattern.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/kitchen.jpeg');
 }
 
 .slide6 .burger {
@@ -959,7 +960,7 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   padding:10px;
   margin: 10px;
   text-align: center;
@@ -980,6 +981,13 @@ video {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  color:black;
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: 80%;
+  margin: 0 30px;
+
 }
 
 .map {
@@ -987,13 +995,11 @@ video {
 }
 
 #map {
-  height: 70vh;
-  width: 200px;
+  height: 50vh;
+  width: 50vw;
   border-radius: 20px;
   margin: 50px;
-  box-shadow: 0px 0px 18px white;
   flex: 1;
-  touch-action: pan-x;
 }
 
 /* @media (min-width:834px) {
@@ -1013,12 +1019,13 @@ video {
   }
   .locationContainer {
     flex-direction: column;
-    height: 100%;
   }
   #map {
     flex: auto;
-    width: 90%;
-    margin-bottom: 150px;
+    margin-bottom: 20px;
+    height: 40vh;
+    width: 70vw;
+    margin: 10px;
   }
 }
 
@@ -1038,8 +1045,7 @@ video {
     padding-top:15px;
   }
   .imgContainer .menuImg {
-    width: 200px;
-    height: 200px;
+    max-width: 50%;
     margin: 0 20px;
   }
 
@@ -1082,16 +1088,16 @@ video {
   }
 }
 } */
-  @media (max-width:375px) {
+  /* @media (max-width:375px) {
     .imgContainer .menuImg {
       width: 150px;
     }
-  }
+  } */
 
   @media (max-width:320px) {
-    .imgContainer .menuImg {
+    /* .imgContainer .menuImg {
       width: 150px;
-    }
+    } */
 
     .menu-left h2 {
       font-size: 20px
