@@ -61,51 +61,50 @@ except2.addEventListener("click", function(ev) {
 
 
 
-let index = 1;
-document.querySelector('.name').innerText = salads[index].name
-document.querySelector('.desc').innerText = salads[index].desc
-    document.querySelector('.price').innerText = salads[index].price +',000L.L'
-document.querySelector('.menuImg').src = salads[index].img
+let index = 0;
+swipeMenu(index)
 
 //Detect swipe on menu container
 let touchstartX = 0
 let touchendX = 0
 
-function checkDirection() {
+function swipeMenu(index){
+  document.querySelector('.name').innerText = salads[index].name
+  document.querySelector('.desc').innerText = salads[index].desc
+  document.querySelector('.price').innerText = salads[index].price+',000L.L'
+  document.querySelector('.menuImg').src = salads[index].img
+}
+
+function checkDirectionMenu() {
   if (touchendX < touchstartX){
     console.log('swiped left!')
-    if(index==2){
-      index =0
-    }
-    document.querySelector('.name').innerText = salads[index].name
-    document.querySelector('.desc').innerText = salads[index].desc
-    document.querySelector('.price').innerText = salads[index].price+',000L.L'
-    document.querySelector('.menuImg').src = salads[index].img
-  index++;
-
-
-  document.querySelector('video').style.transform ='translateX(-150px) rotate(-10deg)'
-
-
-
+      index++
   }
   if (touchendX > touchstartX){
     console.log('swiped right!')
-      if(index==0){
-        index =2
-      }
-      document.querySelector('.name').innerText = salads[index].name
-      document.querySelector('.desc').innerText = salads[index].desc
-          document.querySelector('.price').innerText = salads[index].price+',000L.L'
-      document.querySelector('.menuImg').src = salads[index].img
-    index--;
-
-      document.querySelector('video').style.transform ='translateX(0) rotate(0)'
-
-
+      index--;
   }
+  if(index>2){
+    index=0
+  }
+  if(index<0){
+    index=2
+  }
+  swipeMenu(index)
   console.log(index)
 }
+
+function checkDirectionVideo() {
+  if (touchendX < touchstartX){
+    console.log('swiped left!')
+  document.querySelector('video').style.transform ='translateX(-150px) rotate(-10deg)'
+  }
+  if (touchendX > touchstartX){
+    console.log('swiped right!')
+      document.querySelector('video').style.transform ='translateX(0) rotate(0)'
+  }
+}
+
 
 document.querySelector('.menu-right').addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenX
@@ -113,7 +112,7 @@ document.querySelector('.menu-right').addEventListener('touchstart', e => {
 
 document.querySelector('.menu-right').addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX
-  checkDirection()
+  checkDirectionMenu()
 })
 
 
@@ -124,7 +123,7 @@ document.querySelector('video').addEventListener('touchstart', e => {
 
 document.querySelector('video').addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX
-  checkDirection()
+  checkDirectionVideo()
 })
 
 
