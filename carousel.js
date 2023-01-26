@@ -30,20 +30,17 @@ $(function(){
       // $('.carousel-indicators').css('filter','invert(1)')
         // $('.categoriesContainer').addClass('categorienAnim')
 
-    }else{
-        $('.logo').css('filter','invert(0)')
-            $('.carousel-indicators').css('filter','invert(0)')
     }
     if(index==4){
           $('.phone').css('right','auto')
       $('.phone').css('left','15px')
-          $('.phone').css('color','black')
-              $('.phone').css('backgroundColor','white')
+          $('.phone').css('color','#1E1E1E')
+              $('.phone').css('backgroundColor','#eee')
     }else{
       $('.phone').css('right','15px')
   $('.phone').css('left','auto')
-      $('.phone').css('color','white')
-          $('.phone').css('backgroundColor','black')
+      $('.phone').css('color','#eee')
+          $('.phone').css('backgroundColor','#1E1E1E')
     }
 
     console.log('Slide: ' + index)
