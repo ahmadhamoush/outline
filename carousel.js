@@ -1,6 +1,7 @@
 $(window).on('load',function(){
   document.querySelector('.splashScreen').style.transform = 'translateY(-100%)'
   document.querySelector('.container').style.opacity = '1'
+
 })
 
 $(".carousel").swipe({
@@ -25,8 +26,8 @@ $(function(){
       $('.slide-desc h2').toggleClass('animate')
     }
     if(index ==3){
-      $('.logo').css('filter','invert(1)')
-      $('.carousel-indicators').css('filter','invert(1)')
+      // $('.logo').css('filter','invert(1)')
+      // $('.carousel-indicators').css('filter','invert(1)')
         // $('.categoriesContainer').addClass('categorienAnim')
 
     }else{

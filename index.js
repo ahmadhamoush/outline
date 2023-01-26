@@ -7,7 +7,7 @@ window.addEventListener('resize', documentHeight)
 documentHeight()
 
 //Splash screen
-setTimeout(() => {
+ 
   document.querySelector('.splashScreen').style.backgroundColor = 'white'
   document.querySelector('.logo-img').classList.toggle('toggle')
   setTimeout(() => {
@@ -26,7 +26,7 @@ setTimeout(() => {
   setTimeout(() => {
     document.querySelector('.logo-img').src = './images/logo-mix.png'
   }, 1800)
-})
+
 
 //close Navigation function
 function closeNav() {
