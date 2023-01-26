@@ -705,18 +705,22 @@ margin: 30px;
   width:50px;
   height:50px;
   background-color: #eee;
-  border: 3px solid #1E1E1E;
+
 }
 
 .menuContainer::before{
   top:0;
   right:0;
     border-radius: 0px 20px 0px 50px;
+    border-top: 3px solid #1E1E1E;
+    border-right: 3px solid #1E1E1E;
 }
 .menuContainer::after{
   bottom:0;
   left:0;
     border-radius: 0px 50px 0px 20px;
+    border-bottom: 3px solid #1E1E1E;
+    border-left: 3px solid #1E1E1E;
 }
 .splash-img {
   position: absolute;
