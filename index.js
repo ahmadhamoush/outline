@@ -34,34 +34,8 @@ function closeNav() {
 }
 
 
-//show options container on click
-function showOptions(e) {
-      document.querySelector('.optionsContainer').classList.toggle('showOptions')
-      document.querySelectorAll('.optionsContainer ul li').forEach(item => item.classList.add('animate'))
 
-}
-
-var body = document.querySelector('.slide4');
-var except = document.querySelector('.optionsContainer');
-var except2 = document.querySelector('.categoriesContainer');
-
-//hiding options
-body.addEventListener("click", function(ev) {
-  except.classList.remove('showOptions')
-
-}, false);
-except.addEventListener("click", function(ev) {
-
-  ev.stopPropagation();
-}, false);
-except2.addEventListener("click", function(ev) {
-
-  ev.stopPropagation();
-}, false);
-
-
-
-let index = 0;
+let index =0;
 swipeMenu(index)
 
 //Detect swipe on menu container
@@ -70,9 +44,7 @@ let touchendX = 0
 
 function swipeMenu(index){
   document.querySelector('.name').innerText = salads[index].name
-  document.querySelector('.desc').innerText = salads[index].desc
-  document.querySelector('.price').innerText = salads[index].price+',000L.L'
-  document.querySelector('.menuImg').src = salads[index].img
+  document.querySelector('.imgContainer').style.backgroundImage = `url('${salads[index].img}')`
 }
 
 function checkDirectionMenu() {
@@ -84,11 +56,11 @@ function checkDirectionMenu() {
     console.log('swiped right!')
       index--;
   }
-  if(index>2){
+  if(index>salads.length-1){
     index=0
   }
   if(index<0){
-    index=2
+    index=salads.length-1
   }
   swipeMenu(index)
   console.log(index)
@@ -106,11 +78,11 @@ function checkDirectionVideo() {
 }
 
 
-document.querySelector('.menu-right').addEventListener('touchstart', e => {
+document.querySelector('.imgContainer').addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenX
 })
 
-document.querySelector('.menu-right').addEventListener('touchend', e => {
+document.querySelector('.imgContainer').addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX
   checkDirectionMenu()
 })
@@ -143,7 +115,7 @@ function initMap() {
     zoom: 19,
     center: uluru,
     backgroundColor: 'black',
-    gestureHandling: 'greedy',
+    gestureHandling: 'cooperative',
     navigation: {
       mouseWheelZoomEnabled: false,
       browserTouchPanEnabled: false

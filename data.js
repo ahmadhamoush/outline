@@ -30,19 +30,19 @@ const salads = [
     name:'MISS GOAT CHEESE SALAD',
     price: 289.000,
     desc:'Sprinkled goat cheese featuring coloful leaves, caramelized walnuts, white raisins, apples, pomegranate, cherry tomatoes and a splash of balsamic dressing',
-  img: './images/menu/Group 16.png'
+  img: './images/menu/dish1.png'
 },
   {
     name:'CHICKEN AVO SALAD',
     price: 269.000,
     desc:'Grilled chicken and avocado salad on a bed of crispy leaves with sweet corn, cherry tomatoes served with creamy lemon dressing.',
-  img: './images/menu/Group 17.png'
+  img: './images/menu/dish2.png'
 },
   {
     name:'ASIAN VEGGIE SALAD',
     desc:'A mix of carrots, red cabbage, romaine lettuce, roasted almond, baby corn and cripsy noodles served with an umami sauce.',
     price: 199.000,
-  img: './images/menu/Group 18.png'
+  img: './images/menu/dish3.png'
 },
 ];
 
