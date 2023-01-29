@@ -677,7 +677,7 @@ height: 100%;
   }
 
 .slide4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg9.png');
+  background-image: url('../images/pattern.jpeg');
   background-repeat:no-repeat;
   background-position: left;
   background-size: cover;
@@ -909,6 +909,7 @@ flex:1;
   max-height: 80%;
   margin: 0 30px;
   padding:20px;
+  height: 100%;
 
 }
 

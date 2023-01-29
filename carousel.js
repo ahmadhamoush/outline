@@ -26,10 +26,12 @@ $(function(){
       $('.slide-desc h2').toggleClass('animate')
     }
     if(index ==3){
-      // $('.logo').css('filter','invert(1)')
-      // $('.carousel-indicators').css('filter','invert(1)')
-        // $('.categoriesContainer').addClass('categorienAnim')
-
+      $('.logo').css('filter','invert(1)')
+      $('.carousel-indicators').css('filter','invert(1)')
+    }
+    else{
+      $('.logo').css('filter','invert(0)')
+      $('.carousel-indicators').css('filter','invert(0)')
     }
     if(index==4){
           $('.phone').css('right','auto')
