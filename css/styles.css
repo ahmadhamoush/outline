@@ -883,9 +883,8 @@ video {
   justify-content: center;
   align-items: center;
   color: #1E1E1E;
-  margin: 10px;
   text-align: center;
-  line-height: 1.5;
+  margin: 10px;
 flex:1;
 }
 
@@ -956,6 +955,9 @@ flex:1;
 @media (max-width:650px) {
   .location p{
     font-size: 15px;
+  }
+  .location{
+    margin: 0;
   }
   .location h2{
     font-size: 25px;
