@@ -36,13 +36,13 @@ const salads = [
     name:'CHICKEN AVO SALAD',
     price: 269.000,
     desc:'Grilled chicken and avocado salad on a bed of crispy leaves with sweet corn, cherry tomatoes served with creamy lemon dressing.',
-  img: './images/menu/dish2.png'
+  img: './images/menu/Group 18.png'
 },
   {
     name:'ASIAN VEGGIE SALAD',
     desc:'A mix of carrots, red cabbage, romaine lettuce, roasted almond, baby corn and cripsy noodles served with an umami sauce.',
     price: 199.000,
-  img: './images/menu/dish3.png'
+  img: './images/menu/Group 17.png'
 },
 ];
 
