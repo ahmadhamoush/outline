@@ -155,14 +155,14 @@ function initMap() {
         featureType: "administrative.locality",
         elementType: "labels.text.fill",
         stylers: [{
-          color: "#d59563"
+          color: "#ffffff"
         }],
       },
       {
         featureType: "poi",
         elementType: "labels.text.fill",
         stylers: [{
-          color: "#d59563"
+          color: "#ffffff"
         }],
       },
       {
@@ -190,21 +190,21 @@ function initMap() {
         featureType: "road",
         elementType: "geometry.stroke",
         stylers: [{
-          color: "#d59563"
+          color: "#ffffff"
         }],
       },
       {
         featureType: "road",
         elementType: "labels.text.fill",
         stylers: [{
-          color: "#f3d19c"
+          color: "#D3D3D3"
         }],
       },
       {
         featureType: "road.highway",
         elementType: "geometry",
         stylers: [{
-          color: "#746855"
+          color: "#909090"
         }],
       },
       {
@@ -218,7 +218,7 @@ function initMap() {
         featureType: "road.highway",
         elementType: "labels.text.fill",
         stylers: [{
-          color: "#f3d19c"
+          color: "#d1d1d1"
         }],
       },
       {
@@ -232,7 +232,7 @@ function initMap() {
         featureType: "transit.station",
         elementType: "labels.text.fill",
         stylers: [{
-          color: "#d59563"
+          color: "#D3D3D3"
         }],
       },
       {

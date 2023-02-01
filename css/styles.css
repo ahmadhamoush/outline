@@ -746,7 +746,7 @@ margin: 30px;
 .slide5 {
   background-color: #1E1E1E;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/walls.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/walls.webp');
 }
 
 .slide5>* {
